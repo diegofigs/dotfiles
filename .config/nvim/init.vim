@@ -48,6 +48,10 @@ call plug#end()
 " Enable completions menu
 set completeopt=menu,menuone,noselect
 
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
 lua require('diegofigs')
 
 " open new split panes to right and below
