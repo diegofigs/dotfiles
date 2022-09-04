@@ -1,0 +1,15 @@
+[user]
+	name = diegofigs
+	email = 12281609+diegofigs@users.noreply.github.com
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	up = rebase
+	ci = commit
+	last = log -1 HEAD
+[push]
+	default = current
+[core]
+	excludesfile = ~/.gitignore
+	pager = less --raw-control-chars
