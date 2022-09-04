@@ -7,8 +7,7 @@ function doIt() {
 		--exclude ".DS_Store" \
 		--exclude "bootstrap.sh" \
 		--exclude "README.md" \
-		-avh --no-perms . ~;
-	source ~/.zshrc;
+		-avh --no-perms . .config ~;
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
