@@ -38,12 +38,14 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
+Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'mhinz/vim-startify'
 
 call plug#end()
 
+" Enable completions menu
 set completeopt=menu,menuone,noselect
 
 lua require('diegofigs')
