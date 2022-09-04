@@ -1,4 +1,6 @@
 yarn
 neovim
+typescript
+typescript-language-server
 commitizen
 cz-conventional-changelog
