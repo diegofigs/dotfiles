@@ -1,3 +1,5 @@
+require('diegofigs.set')
+require('diegofigs.null-ls')
 require('diegofigs.nvim-treesitter')
 require('diegofigs.telescope')
 require('diegofigs.lspconfig')
