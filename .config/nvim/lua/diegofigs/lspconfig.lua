@@ -33,7 +33,5 @@ local lsp_flags = {
 nvim_lsp['tsserver'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
-    filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
-    cmd = { "typescript-language-server", "--stdio" }
 }
 
