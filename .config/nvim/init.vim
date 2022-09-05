@@ -21,8 +21,11 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'mhinz/vim-startify'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
+
+colorscheme gruvbox
 
 lua require('diegofigs')
 
