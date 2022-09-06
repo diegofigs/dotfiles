@@ -2,6 +2,7 @@ yarn
 neovim
 typescript
 typescript-language-server
+vscode-langservers-extracted
 eslint
 prettier
 commitizen

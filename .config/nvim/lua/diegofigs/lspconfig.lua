@@ -34,11 +34,29 @@ local on_attach = function(client, bufnr)
 	vim.keymap.set("n", "<space>f", vim.lsp.buf.formatting, bufopts)
 end
 
+local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
+
 local lsp_flags = {
 	-- This is the default in Nvim 0.7+
 	debounce_text_changes = 150,
 }
 nvim_lsp["tsserver"].setup({
-	on_attach = on_attach,
+	on_attach = function(client, bufnr)
+        client.resolved_capabilities.document_formatting = false
+        client.resolved_capabilities.document_range_formatting = false
+        on_attach(client, bufnr)
+    end,
 	flags = lsp_flags,
+	capabilities = capabilities,
+})
+nvim_lsp["eslint"].setup{}
+
+local null_ls = require("null-ls")
+
+null_ls.setup({
+    debug = true,
+	sources = {
+		null_ls.builtins.formatting.stylua,
+		null_ls.builtins.formatting.prettier,
+	},
 })
