@@ -42,21 +42,50 @@ local lsp_flags = {
 }
 nvim_lsp["tsserver"].setup({
 	on_attach = function(client, bufnr)
-        client.resolved_capabilities.document_formatting = false
-        client.resolved_capabilities.document_range_formatting = false
-        on_attach(client, bufnr)
-    end,
+		client.resolved_capabilities.document_formatting = false
+		client.resolved_capabilities.document_range_formatting = false
+		on_attach(client, bufnr)
+	end,
 	flags = lsp_flags,
 	capabilities = capabilities,
 })
-nvim_lsp["eslint"].setup{}
+nvim_lsp["eslint"].setup({})
+nvim_lsp["sumneko_lua"].setup({
+	settings = {
+		Lua = {
+			runtime = {
+				-- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
+				version = "LuaJIT",
+			},
+			diagnostics = {
+				-- Get the language server to recognize the `vim` global
+				globals = { "vim" },
+			},
+			workspace = {
+				-- Make the server aware of Neovim runtime files
+				library = vim.api.nvim_get_runtime_file("", true),
+			},
+			-- Do not send telemetry data containing a randomized but unique identifier
+			telemetry = {
+				enable = false,
+			},
+		},
+	},
+	on_attach = function(client, bufnr)
+		client.resolved_capabilities.document_formatting = false
+		client.resolved_capabilities.document_range_formatting = false
+		on_attach(client, bufnr)
+	end,
+})
 
 local null_ls = require("null-ls")
 
 null_ls.setup({
-    debug = true,
 	sources = {
 		null_ls.builtins.formatting.stylua,
 		null_ls.builtins.formatting.prettier,
 	},
+	on_attach = on_attach,
 })
+
+vim.keymap.set("t", "<A-d>", [[<C-\><C-n><cmd>Lspsaga close_floaterm<CR>]], { silent = true })

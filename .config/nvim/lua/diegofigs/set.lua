@@ -38,4 +38,10 @@ vim.opt.colorcolumn = "80"
 
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
--- vim.g.mapleader = " "
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+
+vim.opt.cursorline = true
+vim.opt.ttyfast = true
+
+--vim.g.mapleader = " "
