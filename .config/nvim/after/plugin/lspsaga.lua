@@ -1,1 +1,2 @@
-require("lspsaga").init_lsp_saga()
+local lspsaga = require("lspsaga")
+lspsaga.init_lsp_saga()
