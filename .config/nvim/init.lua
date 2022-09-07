@@ -4,7 +4,7 @@ vim.call("plug#begin")
 
 Plug("nvim-lua/plenary.nvim")
 Plug("jose-elias-alvarez/null-ls.nvim")
-Plug("nvim-treesitter/nvim-treesitter")
+Plug("nvim-treesitter/nvim-treesitter", { ["do"] = ":TSUpdate" })
 Plug("nvim-telescope/telescope.nvim")
 Plug("neovim/nvim-lspconfig")
 Plug("glepnir/lspsaga.nvim", { branch = "main" })
@@ -28,4 +28,4 @@ vim.call("plug#end")
 
 vim.cmd("colorscheme nightfox")
 
-require("diegofigs")
+require("user")
