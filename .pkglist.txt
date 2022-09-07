@@ -1,7 +1,5 @@
 alacritty
-alacritty-themes
 arc-solid-gtk-theme
-asdf-vm
 awesome
 base
 bat
@@ -19,7 +17,6 @@ lua-language-server
 make
 man-db
 nano
-ncurses5-compat-libs
 neofetch
 neovim
 noto-fonts-emoji
@@ -43,7 +40,5 @@ wpa_supplicant
 xdg-utils
 xorg-xinit
 yadm
-yay
 zsh-autosuggestions
 zsh-syntax-highlighting
-zsh-theme-powerlevel10k-git
