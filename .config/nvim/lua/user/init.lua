@@ -1,0 +1,8 @@
+require("user.options")
+require("user.keymaps")
+require("user.lsp")
+require("user.lualine")
+require("user.nvim-tree")
+require("user.nvim-treesitter")
+require("user.telescope")
+require("user.gitsigns")
