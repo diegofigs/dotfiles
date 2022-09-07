@@ -76,6 +76,7 @@ nvim_lsp["sumneko_lua"].setup({
 		client.resolved_capabilities.document_range_formatting = false
 		on_attach(client, bufnr)
 	end,
+	capabilities = capabilities,
 })
 
 local null_ls = require("null-ls")
@@ -87,5 +88,3 @@ null_ls.setup({
 	},
 	on_attach = on_attach,
 })
-
-vim.keymap.set("t", "<A-d>", [[<C-\><C-n><cmd>Lspsaga close_floaterm<CR>]], { silent = true })

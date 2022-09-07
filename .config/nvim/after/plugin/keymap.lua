@@ -64,4 +64,4 @@ nnoremap("K", "<cmd>Lspsaga hover_doc<CR>", saga_opts)
 
 -- Float terminal
 nnoremap("<A-d>", "<cmd>Lspsaga open_floaterm<CR>", saga_opts)
-tnoremap("<A-d>", [[<C-\><C-n><cmd>Lspsaga close_floaterm<CR>]], { silent = true })
+tnoremap("<A-d>", [[<C-\><C-n><cmd>Lspsaga close_floaterm<CR>]], saga_opts)
