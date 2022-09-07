@@ -44,4 +44,4 @@ vim.opt.splitbelow = true
 vim.opt.cursorline = true
 vim.opt.ttyfast = true
 
---vim.g.mapleader = " "
+vim.g.mapleader = ";"

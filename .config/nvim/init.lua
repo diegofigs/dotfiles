@@ -20,9 +20,10 @@ Plug("kyazdani42/nvim-web-devicons")
 Plug("kyazdani42/nvim-tree.lua")
 Plug("mhinz/vim-startify")
 Plug("morhetz/gruvbox")
+Plug("EdenEast/nightfox.nvim", { tag = "v1.0.0" })
 
 vim.call("plug#end")
 
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme nightfox")
 
 require("diegofigs")
