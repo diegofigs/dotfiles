@@ -15,3 +15,6 @@ export ASDF_DATA_DIR="${XDG_DATA_HOME}"/asdf
 
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
+
+export TERMINFO="$XDG_DATA_HOME"/terminfo
+export TERMINFO_DIRS="$XDG_DATA_HOME"/terminfo:/usr/share/terminfo
