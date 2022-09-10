@@ -11,5 +11,4 @@
 [push]
 	default = current
 [core]
-	excludesfile = ~/.gitignore
 	pager = less --raw-control-chars

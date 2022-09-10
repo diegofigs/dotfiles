@@ -3,10 +3,15 @@ export EDITOR='vim';
 # Man colorized, no clear screen on quit
 export MANPAGER="less -X -R --use-color -Dd+r -Du+b"
 
-export HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+export HISTFILE=${ZDOTDIR:-$HOME}/history
 export HISTSIZE=30000;
 export SAVEHIST=24000;
 
 export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
 
+export ASDF_CONFIG_FILE="${XDG_CONFIG_HOME}"/asdf/asdfrc
+export ASDF_DATA_DIR="${XDG_DATA_HOME}"/asdf
+
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc

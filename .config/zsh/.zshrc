@@ -4,21 +4,19 @@ export PATH="$HOME/bin:$PATH";
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,exports,aliases,functions,extra}; do
+for file in "${ZDOTDIR}"/{path,exports,aliases,functions,extra}.zsh; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
 
 setopt sharehistory
 
-autoload -Uz compinit
-compinit
 # completers
 zstyle ':completion:*' completer _extensions _complete _approximate
 
 # cache
 zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path "$XDG_CACHE_HOME/zsh/.zcompcache"
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
 
 # arrow-driven tab menu
 zstyle ':completion:*' menu select
@@ -31,6 +29,9 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 
 # persistent rehash
 zstyle ':completion:*' rehash true
+
+autoload -U compinit
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 
 # create a zkbd compatible hash;
 # to add other keys to this hash, see: man 5 terminfo
