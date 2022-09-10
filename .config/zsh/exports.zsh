@@ -1,5 +1,5 @@
 # Make vim the default editor.
-export EDITOR='vim';
+export EDITOR='nvim';
 # Man colorized, no clear screen on quit
 export MANPAGER="less -X -R --use-color -Dd+r -Du+b"
 
