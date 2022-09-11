@@ -1,4 +1,5 @@
 alacritty
+alsa-utils
 arc-solid-gtk-theme
 awesome
 base
@@ -9,6 +10,7 @@ fakeroot
 fd
 firefox
 flex
+geany
 grub
 htop
 iwd
@@ -16,6 +18,8 @@ lightdm-slick-greeter
 lua-language-server
 make
 man-db
+mpc
+mpd
 nano
 neofetch
 neovim
@@ -28,10 +32,14 @@ pkgconf
 ranger
 ripgrep
 rofi
+scrot
 slock
 smartmontools
 stylua
 terminus-font
+tmux
+ttf-font-awesome
+unclutter
 vim
 virtualbox-guest-utils
 wget
