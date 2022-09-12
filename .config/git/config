@@ -12,3 +12,5 @@
 	default = current
 [core]
 	pager = less --raw-control-chars
+[pull]
+	rebase = false
