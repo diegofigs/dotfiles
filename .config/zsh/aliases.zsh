@@ -1,6 +1,7 @@
 # aliases
 alias nf='neofetch'
 alias vim='nvim'
+alias dot='yadm'
 alias cat='bat'
 alias ls='exa'
 alias l='ls -l'
