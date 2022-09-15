@@ -37,9 +37,13 @@ end
 local lspsaga = require("lspsaga")
 lspsaga.init_lsp_saga()
 
+-- Setup nvim-autopairs
+require("nvim-autopairs").setup({})
+
 -- Setup nvim-cmp.
 local cmp = require("cmp")
 local lspkind = require("lspkind")
+local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 
 cmp.setup({
 	snippet = {
@@ -109,6 +113,8 @@ cmp.setup.cmdline(":", {
 		{ name = "cmdline" },
 	}),
 })
+
+cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
 
 local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
