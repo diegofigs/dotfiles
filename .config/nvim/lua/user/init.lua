@@ -1,10 +1,4 @@
 require("user.keymaps")
 require("user.lsp")
-require("user.lualine")
-require("user.nvim-tree")
-require("user.nvim-treesitter")
-require("user.telescope")
-require("user.gitsigns")
-require("user.bufferline")
 
 vim.cmd("colorscheme nightfox")
