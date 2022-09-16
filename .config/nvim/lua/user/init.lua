@@ -6,3 +6,5 @@ require("user.nvim-treesitter")
 require("user.telescope")
 require("user.gitsigns")
 require("user.bufferline")
+
+vim.cmd("colorscheme nightfox")

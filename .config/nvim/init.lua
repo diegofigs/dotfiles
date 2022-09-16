@@ -31,6 +31,4 @@ packer.startup(function(use)
 	use({ "EdenEast/nightfox.nvim", tag = "v1.0.0" })
 end)
 
-vim.cmd("colorscheme nightfox")
-
 require("user")
