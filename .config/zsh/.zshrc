@@ -5,7 +5,7 @@ export PATH="$HOME/bin:$PATH";
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
 for file in "${ZDOTDIR}"/{path,exports,aliases,functions,extra}.zsh; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
 
@@ -67,11 +67,11 @@ key[Shift-Tab]="${terminfo[kcbt]}"
 # Finally, make sure the terminal is in application mode, when zle is
 # active. Only then are the values from $terminfo valid.
 if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
-	autoload -Uz add-zle-hook-widget
-	function zle_application_mode_start { echoti smkx }
-	function zle_application_mode_stop { echoti rmkx }
-	add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
-	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
+    autoload -Uz add-zle-hook-widget
+    function zle_application_mode_start { echoti smkx }
+    function zle_application_mode_stop { echoti rmkx }
+    add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
+    add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
 
 # history search
