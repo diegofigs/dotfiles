@@ -1,0 +1,2812 @@
+vim
+ps -ft tty 
+w
+pkill -9 -t pts/0
+pkill -9 -t s002
+exit
+pkill -9 -t s002
+w
+w
+exit
+w
+bash
+w
+exit
+w
+who
+w
+w
+w
+clear
+nf
+w
+bash
+w
+w
+clear
+w
+w
+clear
+nf
+cd projects/warzone-bot
+exit
+w
+clear
+mkdir .config/alacritty
+touch .config/alacritty/alacritty.yml
+vim .config/alacritty/alacritty.yml
+vim .config/alacritty/alacritty.yml
+exit
+brew install alacritty
+nf
+fc-list
+w
+exit
+nf
+vim .config/alacritty/alacritty.yml
+w
+exit
+nf
+w
+w
+nf
+vim .config/alacritty/alacritty.yml
+w
+vim 
+brew install python3.9
+brew install python@3.9
+exit
+nf
+vim
+which pip
+w
+exit
+cd projects/call-of-duty
+w
+cd ..
+cd ..
+vim .zshrc
+exit
+exit
+w
+w
+w
+cd projects
+cd call-of-duty
+w
+exit
+nf
+w
+nf
+htop
+vim .config/nvim/init.vim
+vim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \\
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+vim
+vim 
+vim .config/nvim/init.vim
+vim
+vim
+cd projects/call-of-duty
+vim .
+vim .
+pip3 install --user neovim
+vim .
+vim ~/.config/nvim/init.vim
+vim
+npm i -g neovim
+vim
+brew install ripgrep
+brew install fd
+exit
+brew install zsh-autosuggestions
+vim .zshrc
+brew install zsh-syntax-highlighting
+vim 
+exit
+ripgrep -h
+brew install ripgrep
+brew reinstall ripgrep
+ripgrep --help
+grep
+vim 
+vim
+cd projects/call-of-duty
+vim .
+vim
+vim
+vim 
+vim .config/nvim/init.lua
+touch ~/.config/nvim/init.lua
+vim ~/.config/nvim/init.lua
+vim .
+cd
+vim .config/nvim/init.
+vim .config/nvim/init.lua
+vim
+vim .config/nvim/init.lua
+vim
+vim .config/nvim/init.lua
+vim
+vim .config/nvim/init.lua
+vim .config/nvim/init.vim
+vim
+rm .config/nvim/init.lua
+vim
+vim .config/nvim/init.vim
+vim .config/nvim/init.vim
+code .config/nvim/init.vim
+code .config/nvim/init.vim
+VIM
+vim
+cd projects/call-of-duty
+vim .
+vim src/api.ts
+vim
+vim --version
+vim ~/.config/nvim/init.lua
+vim ~/.config/nvim/init.vim
+vim .
+vim ~/.config/nvim/init.vim
+vim
+vim src/api.ts
+git st
+vim src/index.ts
+git st
+vim
+vim
+npm i -g typescript-language-server\
+
+vim
+git st
+git diff
+d
+vim 
+vim .config/nvim/init.vim
+vim ~/.config/nvim/init.vim
+vim
+vim .
+vim ~/.config/nvim/init.vim
+vim .
+git st
+git diff
+git diff
+clear
+cd
+l
+ll
+npm i -g alacritty-themes
+npm un -g alacritty-themes
+npx alacritty-themes
+cd projects/call-of-duty
+vim .
+l
+git st
+cd
+exit
+cd projects/call-of-duty
+cd
+vim .zshrc
+vim
+vim 
+cd .config/nvim
+ll
+cd ..
+cd ..
+ll
+cat .profile
+vim
+vim
+vim projects/call-of-duty
+vim .config/nvim
+mkdir .config/nvim/lua
+mkdir .config/nvim/lua/diegofigs
+vim .config/nvim/init.vim
+code .config/nvim
+vim
+vim
+vim projects/call-of-duty
+vim
+vim projects/call-of-duty
+vim projects/call-of-duty
+vim
+vim
+vim
+exit
+vim projects/call-of-duty
+vim projects/call-of-duty
+cd projects/call-of-duty
+vim .
+git pull
+git st
+git diff
+git co src/api.ts
+git log
+git last
+vim .
+code ~/.config/nvim
+vim .
+cd ../warzone-bot
+git pull
+git st
+vim .
+vim .
+vim 
+vim
+vim ~/.config/nvim
+vim .
+cd ..
+cd call-of-duty
+vim .
+npx alacritty-themes
+nf
+vim .
+npx alacritty-themes
+cd ../warzone-bot
+vim ~/.config/nvim
+vim
+vim
+vim ~/.config/nvim
+vim ~/.config/nvim
+vim .
+vim ~/.config/nvim
+vim .
+vim .
+vim ~/.config/nvim
+vim .
+vim
+ll
+git st
+cd ..
+git clone git@github.com:diegofigs/wz-bot-api.git
+cd wz-bot-api
+ll
+cat .nvmrc
+nvm current
+vim ~/.config/nvim
+vim .
+vim
+vim 
+vim
+vim
+vim .
+yarn
+vim .
+cd functions
+npm i
+vim .
+vim ~/.nvm/default-packages
+nvm reinstall-packages 16.6.0
+nvm use default
+nvm reinstall-packages 16.6.0
+nvm help
+vim .
+l
+ll
+npm i
+nvm use
+npm i
+vim .
+git st
+cd ..
+git co yarn.lock
+cd functions
+ll
+nvm reinstall-packages default
+npm i
+vim .
+vim ~/.config/nvim
+vim .
+vim .
+vim
+vim
+vim
+vim
+vim .
+git st
+cd ..
+vim .
+cd ..
+ll
+clear
+nf
+vim .zshrc
+cd
+vim .zshrc
+exit
+cd projects/call-of-duty
+cd
+vim .zshrc
+vim .zshrc
+exit
+curl -sS https://starship.rs/install.sh | sh
+vim .zshrc
+exit
+vim .zshrc
+exit
+cd projects/call-of-duty
+ll
+nvm use
+npm run build
+npm test
+vim .zshrc
+exit
+cd projects/call-of-duty
+cd src
+ll
+cd projects/call-of-duty
+ll
+cd ..
+cd
+vim .zshrc
+vim .zshrc-bkp
+vim .zshrc
+exit
+exit
+cd projects/call-of-duty
+nf
+clear
+nf
+htop
+clear
+clear
+clear
+mkdir dotfiles
+cd dotfiles
+git init
+cd ..
+vim .zshrc
+code .zshrc
+touch .aliases
+code .aliases
+mv .aliases .aliases.zsh
+code .aliases.zsh
+nvm help
+rm -rf .nvm
+exit
+rm .zshrc-bkp
+touch .exports.zsh
+code .exports.zsh
+exit
+cd projects/call-of-duty
+ll
+nvm help
+brew uninstall starship
+# Locate and delete the starship binary\
+sh -c 'rm "$(command -v 'starship')"'\
+
+# Locate and delete the starship binary\
+sh -c 'rm "$(command -v 'starship')"'\
+
+sh -c 'rm "$(command -v 'starship')"'
+rm "$(command -v 'starship')"
+which starship
+exit
+cd projects
+cd call-of-duty
+ll
+cd ..
+ll
+cd
+vim .gitconfig
+vim .gitignore_global
+mv .gitignore_global .gitignore
+vim .gitignore
+code .gitconfig
+env
+exit
+env
+exit
+env
+nf
+which zsh
+clear
+man git
+clear
+nf
+brew install asdf
+touch .extra.zsh
+code .extra.zsh
+exit
+brew install asdf
+brew reinstall asdf
+exit
+env
+exit
+ll
+rm .zcompdump-Diegoâ€ƒ¹s\ MBP\ 13-5.8.1
+rm .zcompdump-mbp-12-1-5.8.1
+exit
+/Users/diegofigs/chromedriver ; exit;
+exit
+cd projects/wz-bot-api
+ll
+cd
+rm -rf .docker
+ranger
+exi
+exit
+ranger
+nf
+exit
+exit
+history
+nf
+exit
+history
+exit
+nf
+clear
+history
+exit
+ll
+vim .zshenv
+rm -rf .zsh_sessions
+ll
+exit
+man git
+ll
+vim .lesshst
+lesskey
+rm .lesshst
+exit
+man git
+ll
+rm .lesshst
+exit
+man less
+ll
+code .zshrc
+code .exports.zsh
+rm .lesshst
+exit
+man git
+ll
+vim .lesshst
+vim .lesskey
+exit
+ll
+rm .lesshst
+man git
+ll
+rm .lesskey
+rm .lesshst
+man git
+exit
+man git
+exit
+ll
+cat .zshenv
+cat .zprofile
+cat .zlogin
+rm .zlogin
+ll
+cat .zshenv
+w
+cd fonts
+ll
+cd ..
+rm -rf fonts
+l
+cd Emulators
+ll
+cd Dolphin\ 5.0\ RC\ 34
+l
+cd Games
+ll
+l
+ll
+cd ..
+cd ..
+cd ..
+rm -r Emulators
+l
+cd legacy
+ll
+cd ..
+cleanup
+clear
+nf
+history
+l
+cd Movies
+l
+cd TV
+l
+cd ..
+cd ..
+l
+clear
+nf
+w
+clear
+exit
+rsync -h
+nf
+cleanup .
+cleanup
+vim .config/alacritty/alacritty.yml
+vim .config/alacritty/alacritty.yml
+vim .config/alacritty/alacritty.yml
+exit
+w
+exit
+ll
+mv .exports.zsh .exports
+mv .aliases.zsh .aliases
+mv .extra.zsh .extra
+vim .zshrc
+vim .zshrc
+exit
+nf
+ll
+which less
+brew install less
+exit
+which less
+lesskey
+rm .lesshst
+vim .lesskey
+exit
+man git
+ll
+vim .zprofile
+vim .exports
+rm .zprofile
+vim .config/nvim/init.vim
+cp .zshrc .aliases .exports .extra dotfiles
+nf
+ll
+cp .gitconfig .lesskey dotfiles
+cat .zshenv
+cat .gitignore
+ssh -v
+ssh -V
+which ssh
+brew install openssh
+nf
+brew leaves
+vim 
+which ssh
+exit
+which ssh
+brew install grep
+cd dotfiles
+l
+ll
+rm .extra
+cd ..
+ll
+ls
+mkdir /Volumes/Secondary/legacy
+cd legacy
+mv RUMVehicleDB RUMVehicleDB-client EnrollMe factor-calc finance-factors gh-portfolio ths-client /Volumes/Secondary/legacy
+mkdir terminal
+rm -r terminal
+ll
+git clone https://github.com/dracula/terminal-app.git\
+
+cd terminal-app
+l
+exit
+exit
+w
+clear
+exit
+clear
+nf
+print $terminfo[colors]
+locale -a
+p10k configure
+vim .zshrc
+vim .extra
+exit
+nf
+curl -sS https://starship.rs/install.sh | sh\
+
+vim .extra
+exit
+nf
+cd projects/warzone-bot
+nvm use
+cd ..
+cd ..
+clear
+ll
+ls
+w
+cp -f .zshrc .aliases .exports dotfiles
+rm -r terminal-app
+exit
+clear
+exit
+exit
+nf
+cd projects/call-of-duty
+l
+cd PostMe
+ll
+cd ..
+rm -rf PostMe
+ll
+rm .DS_Store
+l
+cd ..
+mv legacy projects
+l
+cd projects
+ll
+exit
+exit
+cd projects/call-of-duty
+cd
+vim .config/alacritty
+exit
+vim .config/alacritty/alacritty.yml
+cd projects/call-of-duty
+exit
+cd projects/call-of-duty
+ll
+cat tsconfig.json
+brew install exa
+cd
+vim .zshrc
+vim .aliases
+exit
+ls
+ll
+rm .p10k.zsh
+ll
+cp -f .zshrc .aliases .exports dotfiles
+touch .default-npm-packages
+vim .default-npm-packages
+cat .default-npm-packages
+brew leaves
+brew uninstall powerlevel10k
+brew leaves
+exit
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf install nodejs lts
+vim
+asdf global nodejs lts
+exit
+vim 
+cp -f .zshrc .aliases .exports dotfiles
+ll
+cp .lesskey
+cp .lesskey dotfiles
+cp .tool-versions dotfiles
+cd dotfiles
+ll
+cd ..
+rm .DS_Store
+ll
+cp .czrc .default-npm-packages dotfiles
+vim .zshrc
+vim .zshrc
+exit
+exit
+w
+ll
+cat .vimrc
+rm .vimrc
+ll
+cat .viminfo
+ll
+rm .viminfo
+ll
+cd projects/warzone-bot
+cd
+cat .extra
+brew install git
+brew upgrade
+brew uninstall python@3.9 
+brew leaves
+vim
+brew install python3
+brew leaves
+brew info neovim
+which python3
+python3 -V
+python -V
+brew install -f python3
+brew reinstall python@3.10
+brew doctor
+brew cleanup
+sudo brew cleanup
+brew cleanup
+su root
+su root
+brew cleanup
+mkdir -p /Applications/Docker.app/Contents/Resources/cli-plugins
+brew cleanup
+brew cleanup
+brew doctor
+brew leaves
+vim .functions
+vim .zshrc
+vim .zshrc
+exit
+exit
+cp -f .zshrc .aliases .exports  dotfiles
+vim .zshrc
+exit
+cp -f .zshrc .aliases .exports .functions  dotfiles
+vim .zshrc
+cp -f .zshrc .aliases .exports .functions  dotfiles
+cd dotfiles
+l
+ll
+cat .default-npm-packages
+git st
+vim .gitconfig
+npx alacritty-themes
+nf
+npx alacritty-themes
+npx alacritty-themes
+npx alacritty-themes
+exit
+nf
+brew doctor
+cd /usr/local/sbin
+ll
+cd 
+brew uninstall openssh
+clear
+brew doctor
+launchctl status sshd
+sshd --help
+sudo systemctl
+vim .zshrc
+vim .zshrc
+exit
+nf
+python3 -V
+vim
+cleaer
+clear
+cp -f .zshrc .aliases .exports .functions dotfiles
+o .config
+cd .config
+ll
+cd ..
+clear
+nf
+clear
+brew doctor
+clear
+nf
+cp -f .zshrc .aliases .exports .functions dotfiles
+cd dotfiles
+ll
+tre
+tre .
+tre()\
+\
+\
+\
+\
+
+cd ..
+vim .functions
+cp -f .zshrc .aliases .exports .functions dotfiles
+cd do
+cd dotfiles
+l
+ll
+git diff
+git st
+brew info python3.10
+brew info python@3.10
+cd ..
+vim .zshrc
+cp -f .zshrc .aliases .exports .functions dotfiles
+o Documents
+exit
+vim .zshrc
+exit
+cd dotfiles
+..
+ll
+cd ..
+exit
+vim .config/alacritty/alacritty.yml
+cd dotfiles
+ll
+o .
+ll
+cd ..
+cleanup
+sudo cleanup
+sudo cleanup()
+cleanup
+ll
+cd .asdf
+l
+cd ..
+ll
+vim .asdfrc
+asdf global nodejs lts
+ls
+ll
+vim .asdfrc
+cp .asdfrc dotfiles
+ls
+ll
+cat .zshrc
+rm .zcompdump
+exit
+ll
+cd projects/call-of-duty
+cd ..
+cd ..
+vim .extra
+cp -f .zshrc .aliases .exports .functions dotfiles
+exit
+cat .zshrc
+asdf list nodejs
+cd projects/call-of-duty
+cd ../wz-bot-api
+asdf current
+asdf install nodejs 16.16.0
+cd
+vim .extra
+exit
+cp -f .zshrc .aliases .exports .functions dotfiles
+cp -f .zshrc .aliases .exports .functions .asdfrc .czrc .default-npm-packages .gitconfig .lesskey .tool-versions dotfiles
+nf
+brew leaves
+brew uninstall libfido2 ldns
+brew leaves
+brew uninstall libcbor
+brew leaves
+brew list
+nf
+clear
+history
+brew leaves
+ggrep -h
+grep
+clear
+w
+htop
+npx alacritty-themes
+htop
+npx alacritty-themes
+htop
+vim 
+vim
+vim .default-python-packages
+vim
+pip3 uninstall --user pynvim
+pip3 uninstall pynvim
+asdf plugin-add python
+asdf install python 3.10.6
+asdf install python 2.7.18
+asdf global python 3.10.6 2.7.18
+which pip
+which pip3
+exit
+which pip3
+which pip
+which python
+which python3
+python -V
+python3 -V
+python -V
+python2 -V
+clear
+cp -f .zshrc .aliases .exports .functions .asdfrc .czrc .default-npm-packages .default-python-packages .gitconfig .lesskey .tool-versions dotfiles
+cd dotfiles
+mkdir .config
+cd .config
+mkdir nvim
+cd ..
+cd ..
+cd .config/nvim
+l
+cp init.vim lua ~/dotfiles/.config/nvim
+cp -r lua ~/dotfiles/.config/nvim
+cd ..
+cd ..
+cd dotfiles
+ll
+cat .functions
+cd ../projects
+cd legacy
+cd monito-digital-crawl
+git st
+git restore --staged .gitlab-ci.yml
+git st
+git st
+which pip
+open .
+cd
+clear
+cp -rf .zshrc .aliases .exports .functions .asdfrc .czrc .default-npm-packages .default-python-packages .gitconfig .lesskey .tool-versions dotfiles
+cd .config/nvim
+cp -rf init.vim lua ~/dotfiles/.config/nvim
+cd ..
+l
+cd alacritty
+mkdir ~/dotfiles/.config/alacritty
+cp -f alacritty.yml ~/dotfiles/.config/alacritty
+cd
+cd dotfiles
+l
+git st
+cd ..
+vim .zshrc
+cp -rf .zshrc .aliases .exports .functions .asdfrc .czrc .default-npm-packages .default-python-packages .gitconfig .lesskey .tool-versions dotfiles
+cd dotfiles
+vim .zshrc
+env
+bash
+w
+env
+exit
+w
+exit
+l
+ll
+vim bootstrap.sh
+vim .gitconfig
+./bootstrap.sh
+chmod u+x bootstrap.sh
+./bootstrap.sh
+git remote add origin git@github.com:diegofigs/dotfiles.git
+git branch -M main
+git branch -D master
+git br
+git branch --all
+git st
+git add .
+git cz
+git st
+git cz
+git st
+git commit
+git st
+git push
+./bootstrap.sh
+vim bootstrap.sh
+chmod +x bootstrap.sh
+ll
+chmod 744 bootstrap.sh
+ll
+which zsh
+vim bootstrap.sh
+./bootstrap.sh 
+vim bootstrap.sh
+./bootstrap.sh 
+vim bootstrap.sh
+./bootstrap.sh
+./bootstrap.sh
+vim bootstrap.sh
+./bootstrap.sh
+vim bootstrap.sh
+./bootstrap.sh
+vim bootstrap.sh
+./bootstrap.sh
+vim bootstrap.sh
+./bootstrap.sh
+vim bootstrap.sh
+vim bootstrap.sh
+./bootstrap.sh
+cd
+rm .zshrc .aliases .exports .functions .asdfrc .czrc .default-npm-packages .default-python-packages .gitconfig .lesskey .tool-versions 
+cd dotfiles
+./bootstrap.sh
+exit
+cd projects/warzone-bot
+asdf current nodejs
+asdf install nodejs 16.13.1
+cd ../call-of-duty
+cd ../warzone-bot
+cd ../wz-bot-api
+cd
+rm .zshrc .aliases .exports .functions .asdfrc .czrc .default-npm-packages .default-python-packages .gitconfig .lesskey .tool-versions 
+exit
+cd dotfiles
+./bootstrap.sh
+exit
+cd projects/wz-bot-api
+cd ..
+cd ..
+cd dotfiles
+ll
+git st
+vim bootstrap.sh
+./bootstrap.sh
+cd ..
+cd .config
+mv nvim nvim-og
+mv alacritty alacritty-og
+cd
+cd dotfiles
+./bootstrap.sh
+exit
+vim
+vim
+cat /etc/shells
+cd dotfiles
+vim bootstrap.sh
+./bootstrap.sh
+vim bootstrap.sh
+./bootstrap.sh
+vim
+exit
+vim
+cd dotfiles
+l
+ll
+vim bootstrap.sh
+./bootstrap.sh
+vim bootstrap.sh
+./bootstrap.sh
+vim bootstrap.sh
+./bootstrap.sh
+vim bootstrap.sh
+./bootstrap.sh
+git st
+git diff
+gi tst
+git st
+git add .
+git st
+git cz
+git push
+cd ..
+rm .zshrc .aliases .exports .functions .asdfrc .czrc .default-npm-packages .default-python-packages .gitconfig .lesskey .tool-versions 
+cd dotfiles
+./bootstrap.sh
+clear
+htop
+git push
+clear
+nf
+git st
+cd ..
+cd .config
+rm -r nvim-og alacritty-og
+rm -rf nvim-og alacritty-og
+ll
+cd nvim
+vim
+vim .
+vim init.vim
+clear
+cp -f init.vim ~/.config/nvim/init.vim
+cp -f init.vim ~/.config/nvim/
+vim init.vim
+cp -f init.vim ~/.config/nvim/
+cp -f init.vim ~/dotfiles/.config/nvim
+vim init.vim
+vim
+vim init.vim
+vim
+cp -f init.vim ~/dotfiles/.config/nvim
+vim
+cd
+cd projects/warzone-bot
+vim .
+npm i -g typescript-language-server\
+
+vim .
+cd ../wz-bot-api
+vim .
+cd
+vim .default-npm-packages
+asdf install nodejs 16.13.1
+cd projects/wz-bot-api
+npm i -g typescript typescript-language-server
+vim .
+npm i -g prettier
+vim .
+vim ~/.config/nvim/init.vim
+vim .
+vim ~/.config/nvim/init.vim
+vim .
+vim ~/.config/nvim/init.vim
+vim ~/.config/nvim/init.vim
+vim .
+vim ~/.config/nvim/init.vim
+vim .
+vim ~/.config/nvim/init.vim
+vim .
+vim ~/.config/nvim/init.vim
+vim .
+vim .
+cd
+cd .config/nvim
+vim .
+vim lua/diegofigs/lualine.lua
+vim lua/diegofigs
+cd 
+cd projects/wz-bot-api
+vim .
+cd
+cd .config/nvim
+cp -f init.vim ~/dotfiles/.config/nvim
+cp -r lua ~/dotfiles/.config/nvim
+vim ~/.config/nvim/init.vim
+cp -f init.vim ~/dotfiles/.config/nvim
+cd
+cd projects/wz-bot-api
+vim .
+vim .
+vim ~/.config/nvim/init.vim
+vim .
+cd ~/.config/nvim
+cp -f init.vim ~/dotfiles/.config/nvim
+cd
+cd dotfiles
+l
+git st
+exit
+nf
+cd dotfiles
+exit
+htop
+git st
+cd dotfiles
+ll
+git st
+cd ..
+brew install yadm
+yadm status
+yadm clone git@github.com:diegofigs/dotfiles
+git st
+yadm status
+vim 
+vim projects/call-of-duty
+npm i -g typescript typescript-language-server
+yadm diff
+rm -rf dotfiles
+which git
+git -v
+yadm commit -h
+yadm git -h
+yadm -h
+yadm cz
+yadm st
+git add .default-npm-packages
+yadm add .default-npm-packages
+yadm cz
+git st
+yadm st
+yadm diff
+git add .config/nvim/init.vim
+yadm diff
+yadm add .config/nvim/lua
+yadm st
+yadm add -p
+yadm cz
+yadm st
+yadm diff
+yadm add .
+yadm st
+yadm .config/nvim/init.vim
+yadm add .config/nvim/init.vim
+yadm cz
+yadm push
+ll
+l
+yadm rm bootstrap.sh
+yadm st
+yadm cz
+git push
+yadm push
+brew install fontconfig
+mkdir .config/fontconfig
+vim .config/fontconfig/fonts.conf
+fc-list | grep -i -e "noto sans" -e "noto color emoji"
+brew install font-noto-color-emoji
+fc-list | grep -i -e "noto sans" -e "noto color emoji" -e "noto serif"
+fc-cache -fv
+fc-list | grep -i -e "noto sans" -e "noto color emoji" -e "noto serif"
+exit
+cd projects/legacy/monito-digital-crawl
+cd
+vim .config/alacritty/alacritty.yml
+exit
+cd projects/legacy/monito-digital-crawl
+fc-list
+fc-list --help
+fc-list -b
+fc-list -b | grep meslo
+fc-list -b | grep MesloLGS
+fc-list -b | grep FiraCode
+exit
+cd projects/call-of-duty
+nf
+vim .config/alacritty/alacritty.yml
+vim .config/fontconfig/fonts.conf
+vim .config/alacritty/alacritty.yml
+nf
+exit
+for family in serif sans-serif monospace Arial Helvetica Verdana "Times New Roman" "Courier New"; do\
+  echo -n "$family: "\
+  fc-match "$family"\
+done
+brew list
+fc-list -b | grep Hack
+fc-list -b | grep FiraCode
+brew install font-fira-code-nerd-font
+vim .config/fontconfig/fonts.conf
+cd projects/call-of-duty
+nf
+vim .config/fontconfig/fonts.conf
+cd
+fc-list -b | grep FiraCode
+fc-cache -fv
+fc-list -b | grep FiraCode
+for family in serif sans-serif monospace Arial Helvetica Verdana "Times New Roman" "Courier New"; do\
+  echo -n "$family: "\
+  fc-match "$family"\
+done
+exit
+vim .config/fontconfig/fonts.conf
+cd projects/call-of-duty
+exit
+brew install font-fira-code-nerd-font
+brew reinstall --cask font-fira-code-nerd-font
+vim .config/alacritty/alacritty.yml
+exit
+cd projects/call-of-duty
+nf
+brew leaves
+nf
+fc-list -b | grep monospace
+cd
+l
+yadm st
+yadm diff
+vim .config/alacritty/extra.yml
+vim .config/alacritty/alacritty.yml
+yadm st
+yadm add .config/alacritty/alacritty.yml
+yadm diff
+yadm diff --staged
+vim .config/alacritty/alacritty.yml
+git st
+yadm st
+yadm add .config/alacritty/alacritty.yml
+exit
+w
+yadm add .config/alacritty
+yadm reset
+yadm add .config/alacritty/alacritty.yml
+yadm cz
+yadm push
+yadm l
+yadm log
+cd projects/call-of-duty
+vim .
+npx alacritty-themes
+vim .
+npx alacritty-themes
+vim .
+yadm st
+nf
+exit
+nf
+echo $terminfo
+echo $term_font
+exit
+for family in serif sans-serif monospace Arial Helvetica Verdana "Times New Roman" "Courier New"; do\
+  echo -n "$family: "\
+  fc-match "$family"\
+done
+brew info fontconfig
+brew uninstall fontconfig freetype
+rm -r .config/fontconfig
+fc-cache -fv
+brew uninstall fontconfig freetype
+nf
+for family in serif sans-serif monospace Arial Helvetica Verdana "Times New Roman" "Courier New"; do\
+  echo -n "$family: "\
+  fc-match "$family"\
+done
+exit
+nf
+vim .config/alacritty/alacritty.yml
+nf
+vim .config/alacritty/alacritty.yml
+exit
+nf
+rm .config/alacritty/extra.yml
+exit
+nf
+yadm st
+yadm diff
+yadm add .config/alacritty/alacritty.yml -p
+yadm diff --staged
+yadm cz
+yadm push
+exit
+yadm pull
+yadm stash
+yadm pull
+yadm stash pop
+clear
+cd projects/call-of-duty
+exit
+vim .config/alacritty/alacritty.yml
+cd projects/cal`
+cd projects/call-of-duty
+cd ..
+cd call-of-duty
+cd
+vim .config/nvim/init.vim
+code .config/nvim
+vim .config/nvim
+vim .config/nvim/lua/diegofigs/set.lua
+vim .config/nvim/init.vim
+vim .config/nvim/lua/diegofigs/init.lua
+vim
+vim .config/nvim/init.vim
+vim
+vim .config/nvim/lua/diegofigs/null-ls.lua
+vim .config/nvim/lua/diegofigs/init.lua
+vim .config/nvim
+vim .config/nvim/lua/diegofigs/init.lua
+vim .config/nvim/lua/diegofigs/null-ls.lua
+vim .config/nvim
+vim projects/call-of-duty
+npm i -g prettier
+vim projects/call-of-duty
+vim projects/call-of-duty
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim/lua/diegofigs/lspconfig.lua
+vim projects/call-of-duty
+vim projects/warzone-bot
+vim projects/call-of-duty
+vim .config/nvim/lua/diegofigs/null-ls.lua
+vim projects/call-of-duty
+exit
+vim projects/call-of-duty
+vim .config/nvim/lua/diegofigs/null-ls.lua
+vim projects/call-of-duty
+prettier
+cd projects/call-of-duty
+cd ..
+cd call-of-duty
+asdf current
+prettier -c src/api.ts
+npm i -g eslint prettier
+vim .
+git st
+git diff
+cd
+vim .config/nvim/lua/diegofigs/null-ls.lua
+asdf list nodejs
+asdf uninstall lts
+asdf uninstall nodejs lts
+asdf install nodejs lts
+vim .default-npm-packages
+asdf install nodejs lts
+yadm st
+vim projects/call-of-duty
+npm init @eslint/config
+cd projects/call-of-duty
+npm init @eslint/config
+vim .
+vim .
+npm run lint
+vim .
+npm run lint
+vim .
+brew install stylua
+vim .
+cd
+vim .config/nvim/lua/diegofigs/null-ls.lua
+exit
+cd projects/call-of-duty
+vim .
+cd
+vim .config/nvim/lua/diegofigs/null-ls.lua
+vim .config/nvim/lua/diegofigs/null-ls.lua
+cd projects/call-of-duty
+vim .
+prettier -c projects/call-of-duty/src/api.ts
+cd projects/call-of-duty
+vim .
+cd
+vim .config/nvim
+yadm st
+yadm add .default-npm-packages
+yadm st --staged
+yadm diff --staged
+yadm cz
+git st
+yadm st
+yadm reset
+yadm
+yadm st
+yadm add .default-npm-packages
+yadm cz --retry
+yadm st
+yadm add .config/nvim/init.vim .config/nvim/lua/diegofigs
+yadm st
+yadm cz
+yadm push
+yadm st
+yadm pull
+vim .config/nvim
+vim .config/nvim
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim
+yadm pull
+vim .config/nvim
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim
+vim projects/call-of-duty
+vim projects/call-of-duty
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim
+vim projects/call-of-duty
+vim
+cd projects
+cd call-of-duty
+l
+git st
+npm i
+cd
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim
+vim projects/call-of-duty
+npm i -g vscode-langservers-extracted
+vim projects/call-of-duty
+vim .config/nvim
+yadm st
+yadm .config/nvim/lua/diegofigs
+yadm add .config/nvim/lua/diegofigs
+yadm st
+yadm cz
+vim projects/call-of-duty
+cd projects/call-of-duty
+npm install --save-dev --save-exact prettier
+touch .prettierignore
+vim .prettierignore
+vim .
+vim .prettierignore
+vim .
+cd 
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim
+yadm st
+vim .default-npm-packages
+yadm add .default-npm-packages
+yadm cz
+yadm push
+clear
+nf
+brew leaves
+brew info libpng
+brew uninstall libpng
+brew leaves
+nf
+exit
+nf
+brew leaves
+ll
+l
+cd projects
+ll
+cd call-of-duty
+yadm pull
+vim .
+vim .
+cd ..
+cd ..
+brew install lua-language-server
+brew upgrade
+brew upgrade
+brew doctor
+brew info python@3.10
+asdf current
+cd .config/nvim
+vim .
+brew info lua-language-server
+vim .
+ll
+vim .
+exit
+screen 
+exit
+exit
+w
+cd .config/nvim
+vim .
+cd
+cd projects/call-of-duty
+vim .
+vim ~/.config/nvim/
+yadm st
+yadm restore ~/.config/nvim/after/plugin/keymap.lua
+yadm st
+vim .
+vim ~/.config/nvim/
+vim .
+vim .
+git st
+git restore --hard
+git reset --hard
+git clean -u
+git clean -x
+git st
+git clean -xf
+git st
+vim .
+vim ~/.config/nvim/
+vim .
+vim ~/.config/nvim/
+vim .
+vim ~/.config/nvim/
+yadm st
+vim ~/.config/nvim/
+vim .
+vim .
+git st
+git diff
+git restore src/index.ts
+vim .
+cd ..
+l
+cd ..
+vim ~/.config/nvim/
+npx alacritty-themes
+yadm st
+yadm diff 
+vim ~/.config/nvim/
+yadm st
+yadm st
+yadm add .config/nvim
+yadm cz
+yadm push
+cd .config/nvim
+vim .
+vim .
+yadm st
+vim .
+vim .
+cd
+cd projects/call-of-duty
+vim .
+cd 
+vim ~/.config/nvim/
+yadm st
+vim projects/call-of-duty
+vim ~/.config/nvim/
+vim projects/call-of-duty
+vim ~/.config/nvim/
+vim projects/call-of-duty
+vim .config/nvim
+vim projects/call-of-duty
+vim projects/call-of-duty
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim
+vim .config/nvim
+vim projects/call-of-duty
+vim .config/nvim
+vim .config/nvim
+vim
+vim .config/nvim
+vim projects/call-of-duty
+vim projects/call-of-duty
+vim .config/nvim
+exit
+yadm st
+yadm diff
+git add .config/nvim
+yadm add .config/nvim
+yadm st
+yadm cz
+yadm push
+yadm pull
+nf
+cd projects/
+mkdir call-of-duty
+mkdir dual
+cd dual
+git clone git@github.com:Dual-Finance/dual-labs-dip.git
+cd dual-labs-dip
+vim .
+exit
+cd app
+yarn
+exit
+exit
+cd projects/call-of-duty
+ll
+cd ..
+cd dual/dual-labs-dip
+vim .
+cd ..
+cd ..
+vim .config/nvim
+git st
+exit
+vim .
+vim ~/.config/nvim/
+vim .
+git co diegofigs/feat-beginner-mode 
+clear
+brew install tmux
+tmux
+vim .
+git st
+cd app
+yarn
+yarn start
+cd
+vim .config/nvim
+git st
+clear
+htop
+clear
+yarn start
+cd app
+yarn start
+clear
+nf
+vim .
+vim .
+git pull
+clear
+nf
+clear
+vim .
+clear
+nf
+clear
+nf
+tmux
+exit
+clear
+nf
+cd projects/call-of-duty
+vim .
+cd ..
+cd dual/dual-labs-dip
+git st
+git add .
+git st
+git reset
+git st
+vim .
+git st
+git add app/src/hooks app/src/constants 
+git st
+vim .
+git diff
+tmux
+vim .
+vim .
+cd app
+yarn start
+git st
+clear
+yarn start
+cd app && yarn start
+cd app && yarn start
+yarn start
+git st
+git add .
+git st
+git cz
+git push
+git st
+git st
+nf
+clear
+nf
+htop
+clear
+clear
+nf
+w
+git st
+git add .
+git cz
+git st
+git st
+git add .
+git st
+git c
+git cz
+git st
+exit
+clear
+nf
+git st
+git add app
+git st
+git cz
+git st
+yarn start
+yarn start
+cd app
+clear
+yarn start
+git st
+clear
+nf
+clear
+git st
+clear
+cd
+vim .config/nvim
+vim .config/nvim
+clear
+nf
+vim .
+vim .config/nvim
+vim .
+git st
+cd projects/dual/dual-labs-dip
+git st
+vim .
+exit
+clear
+nf
+yarn start
+cd ap
+cd app
+yarn start
+git st
+git st
+git add app/src/hooks
+git st
+git cz
+git add .
+git cz
+git push
+git st
+git pull
+git pull origin master 
+git st
+git pull --rebase origin master
+gitst
+git st
+git rebase --abort
+git st
+git merge origin/master 
+git st
+git st
+git add .
+git st
+git st
+git commit
+git push
+clear
+git st
+git pull
+git log
+clear
+vim .
+nf
+git st
+git add .
+git cz
+git pull
+git cz
+git push
+exit
+exit
+clear
+cd
+clear
+nf
+git clone git@github.com:b3nj5m1n/xdg-ninja.git
+cd xdg-ninja
+./xdg-ninja.sh
+cd ..
+rm -rf xdg-ninja
+brew install xdg-ninja
+xdg-ninja
+exit
+cd
+xdg-ninja
+tmux
+xdg-ninja
+exit
+xdg-ninja
+cat .terminfo/61/alacritty
+cd .terminfo/61
+l
+cd ..
+cd ..
+clear
+xdg-ninja
+tmux
+xdg-ninja
+vim .tmux.conf
+xdg-ninja
+exit
+tmux
+vim .config/zsh
+xdg-ninja
+mkdir .config/tmux
+mv .tmux.conf .config/tmux
+xdg-ninja
+ll
+vim .exports
+cat .exports
+cat /etc/zshenv
+mv -r .asdf .local/share
+cp -r .asdf .local/share/asdf
+mkdir .config/asdf
+cp .asdfrc .config/asdf/asdfrc
+sudo nvim /etc/zshenv
+vim .exports
+rm -rf .asdf
+mv .gitconfig .config/git/config
+xdg-ninja
+cat .npmrc
+rm .asdfrc
+xdg-ninja
+brew leaves
+brew info ncurses
+cat .terminfo
+cat .terminfo/61/alacritty
+xdg-ninja
+vim .exports
+cp -rf .gnupg .local/share/gnupg
+rm -rf .gnupg
+exit
+exit
+exit
+xdg-ninja
+vim .exports
+mkdir .config/npm
+mv .npmrc .config/npm
+xdg-ninja
+yadm st
+yadm diff
+vim .config/zsh/.zshrc
+tre()
+vim .functions
+open .
+asdf current
+yadm add .exports .asdfrc .config/asdf/asdfrc .gitconfig .config/git/config
+yadm st
+yadm add .config/zsh/.zshrc .zshrc
+yadm st
+cat /etc/zshenv
+sudo mv /etc/zshenv .zshenv
+ll
+l
+vim .zshenv
+vim .config/zsh
+reboot
+w
+xdg-ninja
+ll
+yadm st
+vim .exports
+vim .exports
+vim .config/zsh
+exit
+w
+exit
+ll
+vim .path
+cd projects/wz-bot-api
+ll
+cd ..
+cd warzone-bot
+ll
+asdf current
+cd ..
+cd call-of-duty
+ll
+git st
+vim .gitignore
+git st
+\:q
+cd
+l
+ll
+cat .gitignore
+ll
+cat .config/git/ignore
+rm .gitignore
+cd projects/call-of-duty
+git st
+cd
+cd .config/git
+vim .
+cd
+cd projects/call-of-duty
+git st
+rm -rf .vscode
+git st
+cd
+cd projects/call-of-duty
+ll
+git st
+cd
+yadm st
+vim .config/git
+cd call
+cd projects/call-of-duty
+touch .DS_Store
+git st
+rm .DS_Store
+ll
+git st
+cd
+yadm st
+yadm add .config/git/config
+yadm st
+vim .config/zsh
+mv .aliases .config/aliases.zsh
+mv .exports .config/exports.zsh
+mv .config/aliases.zsh .config/zsh
+mv .config/exports.zsh .config/zsh
+mv .functions .config/zsh/functions.zsh
+mv .extra .config/zsh/extra.zsh
+yadm st
+yadm add .aliases .exports .functions .config/zsh/aliases.zsh .config/zsh/exports.zsh .config/zsh/functions.zsh
+yadm st
+yadm add .config/zsh/.zshrc
+yadm st
+exit
+yadm st
+yadm add .config/zsh/.zshrc
+yadm st
+yadm cz
+asdf current
+asdf install nodejs lts
+asdf uninstall nodejs lts
+asdf install nodejs lts
+xdg-ninja
+brew reinstall asdf
+asdf install nodejs lts
+asdf uninstall nodejs lts
+asdf install nodejs lts
+yadm st
+mkdir .asdf
+rm .asdf
+rm -r .asdf
+env
+vim .config/zsh/exports.zsh
+exit
+asdf install nodejs lts
+mv .local/share/asdf/* .asdf/*
+mv .local/share/asdf/* .asdf
+mkdir .asdf
+mv .local/share/asdf/* .asdf
+cd .asdf
+l
+ll
+asdf install nodejs lts
+vim .config/zsh/exports.zsh
+cd
+vim .config/zsh/exports.zsh
+mv .config/asdf/asdfrc .asdfrc
+exit
+asdf install nodejs lts
+git cz
+asdf uninstall nodejs lts
+asdf install nodejs lts
+brew reinstall asdf
+asdf install nodejs lts
+asdf uninstall nodejs lts
+asdf install nodejs lts
+brew doctor
+rm .r .asdf
+rm -r .asdf
+rm -rf .asdf
+asdf plugin-add nodejs
+asdf install nodejs lts
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf plugin-remove nodejs
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf install nodejs lts
+asdf install nodejs lts
+xdg-ninja
+mv .asdfrc .config/asdf/asdfrc
+vim .config/zsh/exports.zsh
+vim .config/asdf/asdfrc
+asdf install nodejs lts
+asdf uninstall nodejs lts
+asdf uninstall nodejs 16.17.0
+vim .config/zsh/exports.zsh
+exit
+asdf install nodejs lts
+rm .rf .asdf
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf install nodejs lts
+asdf install nodejs lts
+yadm st
+vim .config/zsh/exports.zsh
+yadm add .config/zsh/exports.zsh
+yadm st
+cd projects/call-of-duty
+cd ../warzone-bot
+cat .nvmrc
+asdf install nodejs 16.13.1
+asdf global python 3.10.6 2.7.18
+cd ..
+cd dual/dual-labs-dip
+vim .
+cd ..
+cd ..
+cd ..
+clear
+python3 -V
+asdf plugin-add python
+asdf global python 3.6.2 2.7.13
+asdf install python 3.10.6
+asdf install python 2.7.18
+python2 -V
+python -V
+vim
+vim .config/nvim
+vim 
+yadm st
+yadm cz
+yadm st
+yadm add .config/nvim/lua/user/options.lua
+yadm cz
+yadm push
+xdg-ninja
+rm -rf .asdf
+exit
+yadm st
+cd projects/dual/dual-labs-dip
+git cz
+git st
+cd app
+cd
+tmux
+cd projects/dual/dual-labs-dip
+cd app
+yarn start
+git st
+xdg-ninja
+ll
+ll
+rm .DS_Store
+xdg-ninja
+exit
+exit
+xdg-ninja
+cd .config
+l
+cd tmux
+ll
+mv .tmux.conf tmux.conf
+cd
+ll
+xdg-ninja
+cat .vi
+cat .vim
+cd .vim
+l
+ll
+cd ..
+rm -r .vim
+ll
+vim
+rm .viminfo
+xdg-ninja
+yadm add .zshenv
+yadm st
+yadm cz
+xdg-ninja
+rm .bash_profile
+rm .bashrc
+xdg-ninja
+cp -r .terminfo /Users/diegofigs/.local/share/terminfo
+vim .config/zsh/exports.zsh
+exit
+xdg-ninja
+rm -rf .terminfo
+exit
+xdg-ninj
+xdg-ninja
+mv .zshenv .config/zsh
+yadm st
+exit
+ll
+l
+xdg-ninja
+rm .zsh_history
+ll
+tmux
+xdg-ninja
+yadm st
+git add .config/zsh/exports.zsh
+yadm add .config/zsh/exports.zsh
+yadm st
+yadm cz
+yadm diff --staged
+yadm cz
+yadm add .config/tmux
+yadm st
+yadm cz
+yadm push
+mv .makefile .config/Makefile
+mv .pkglist.txt .config/pkglist.txt
+cd .config
+cd
+ll
+yadm st
+yadm add .makefile .pkglist.txt .config/Makefile .config/pkglist.txt
+yadm st
+yadm cz
+cd .config
+..
+cd ..
+l
+clear
+nf
+ll
+cd .npm
+l
+ll
+cd ..
+clear
+ll
+yadm st
+yadm push
+clear
+cd projects/dual/dual-labs-dip/app
+yarn start
+nf
+cd projects/dual/dual-labs-dip
+vim .
+nf
+tmux
+cd projects/dual/dual-labs-dip/app
+yarn start
+vim .
+cd projects/dual/dual-labs-dip
+clear
+vim .
+git st
+cd projects/dual/dual-labs-dip/app
+git st
+git add src/hooks
+git st
+git cz
+git st
+git add .
+git st
+git cz
+git push
+w
+exit
+git pull
+clear
+clear
+yarn start
+git st
+git pull
+exit
+cd
+clear
+nf
+yadm pull
+yadm stash
+yadm pull
+yadm stash pop
+vim .config/alacritty/alacritty.yml
+clear
+nf
+cd projects/dual/dual-labs-dip
+starship preset nerd-font-symbols > ~/.config/starship.toml\
+
+git st
+cd
+vim .config/starship.toml
+ls
+exit
+vim .config/starship.toml
+vim .config/starship.toml
+clear
+nf
+ll
+vim .config/starship.toml
+git st
+ll
+cd projects/dual/dual-labs-dip
+yarn start
+cd app
+yarn start
+exit
+git st
+yadm st
+rm "$ZSH_COMPDUMP"
+clear
+xdg-ninja
+xdg-ninja
+lsof
+lsof | rg .Trash
+kill 64187
+lsof | rg .Trash
+lsof | rg .Trash
+lsof | rg usr
+cd /Volumes/Macintosh\ HD/Users/diegofigs/.Trash
+ls
+sudo -s
+ls
+tmux attach-session
+cd projects/dual/dual-labs-dip
+git st
+cd
+yadm pull
+tmux new -s home
+nf
+cd projects/dual/dual-labs-dip
+git st
+cd projects/dual/dual-labs-dip/app
+yarn start
+git add app/src/hooks
+git cz
+git st
+git add app/src/pages/pools/BeginnerMode
+git st
+git cz
+git push
+exit
+clear
+tmux rename dual
+tmux suspend
+clear
+nf
+htop
+yadm st
+yadm pull
+clear
+cd projects/dual/dual-labs-dip
+cd
+clear
+nf
+clear
+nf
+tmux
+tmux suspend
+tmux list-sessions
+tmux kill-session 1
+tmux kill-session
+tmux attach-session
+clear
+cd projects/dual/dual-labs-dip/app
+vim .
+git pull
+git co master 
+git pull
+asdf current nodejs
+clear
+exit
+gi tpull
+git pull
+cd ..
+vim .
+cd app
+yarn start
+clear
+vim .config/starship.toml
+clear
+nf
+yadm swt
+yadm st
+yadm pull
+w
+clear
+tmux list-sessions
+tmux attach-session -t dual
+yarn start
+cd projects/dual/dual-labs-dip
+git st
+r
+git st
+clear
+nf
+git st
+git pull
+git ls-remote
+clear
+nf
+tmux suspend
+clear
+vim .config/nvim
+tmux attach
+vim .
+tmux suspend
+tmux list-sessions
+clear
+vim .config/nvim
+tmux atta
+clear
+vim .
+exit
+tmux suspend
+exit
+exit
+tmux list-sessions
+vim .config/nvim
+tmux attach
+cd projects/dual/dual-labs-dip
+vim .
+tmux suspend
+tmux attach
+tmux suspend
+vim .config/nvim
+tmux attach -t dual
+vim .
+tmux suspend
+vim .config/nvim
+tmux attach -t dual
+vim .
+exit
+exit
+exit
+exit
+exit
+yadm st
+vim .config/nvim
+vim .config/nvim
+exit
+vim .config/nvim
+tmux attach -t dual
+cd projects/dual/dual-labs-dip
+vim .
+cd
+vim .config/nvim
+cd projects/dual/dual-labs-dip
+vim .
+cd
+vim .config/nvim
+cd projects/dual/dual-labs-dip
+vim .
+cd 
+vim .config/nvim
+cd projects/dual/dual-labs-dip
+vim .
+clear
+cd projects/dual/dual-labs-dip
+cd
+clear
+yadm st
+yadm add .config/nvim
+yadm st
+yadm diff
+yadm diff --staged
+nvim --startuptime
+nvim --startuptime projects/dual/dual-labs-dip
+nvim --startuptime sample.txt
+cat sample.txt
+brew install bat
+cat sample.txt
+rm sample.txt
+nvim --startuptime vim.log
+cat vim.log
+vim .config/nvim
+nvim --startuptime vim.log
+cat vim.log
+rm vim.log
+cat vim.log
+nvim --startuptime vim.log
+cat vim.log
+clear
+rm vim.log
+nvim --startuptime vim.log
+vim .config/nvim
+nvim --startuptime vim.log
+cat vim.log
+vim .config/nvim
+rm vim.log
+nvim --startuptime vim.log
+cat vim.log
+vim .config/nvim
+nvim --startuptime vim.log
+cat vim.log
+vim .config/nvim
+nvim --startuptime vim.log
+cat vim.log
+vim .config/nvim
+nvim --startuptime vim.log
+cat vim.log
+rm vim.log
+cat vim.log
+nvim --startuptime vim.log
+cat vim.log
+vim .config/nvim
+cat vim.log
+rm vim.log
+nvim --startuptime vim.log
+cat vim.log
+yadm st
+yadm restore .config/nvim/lua/user/options.lua
+yadm st
+yadm restore --staged .config/nvim/lua/user/options.lua
+yadm st
+yadm restore .config/nvim/lua/user/options.lua
+yadm st
+rm vim.log
+nvim --startuptime vim.log
+cat vim.log
+vim .config/nvim
+yadm st
+yadm cz
+yadm st
+vim .config/zsh
+exit
+dot st
+dot add .config/zsh/aliases.zsh
+dot cz
+dot push
+exit
+dot pull
+dot st
+vim .config/zsh
+vim .config/zsh
+vim .config/nvim
+$ nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+vim .config/nvim
+vim .config/nvim
+vim .config/nvim/init.lua
+vim .config/nvim
+vim .config/nvim
+dot st
+dot add .config/nvim
+dot cz
+dot st
+dot reset
+dot st
+nvim --startuptime vim.log
+cat vim.log
+nvim --clean --startuptime vim.log
+cat vim.log
+rm vim.log
+nvim --startuptime vim.log
+cat vim.log
+clear
+vim .config/nvim
+vim .config/nvim
+dot st
+dot diff
+rm -rf .local/share/nvim/plugged
+rm vim.log
+nvim --startuptime vim.log
+cat vim.log
+rm vim.log
+nvim --startuptime vim.log
+cat vim.log
+rm vim.log
+nvim --startuptime vim.log
+cat vim.log
+clear
+nf
+w
+nf
+dot st
+vim .config/nvim
+vim .config/nvim
+vim .config/nvim
+mv .config/nvim/lua/user/plugins .config/nvim/lua/plugins
+vim .config/nvim
+vim .config/nvim/init.lua
+vim .config/nvim/init.lua
+vim .config/nvim/lua/user/init.lua
+vim .config/nvim/lua/user/init.lua
+vim .config/nvim/init.lua
+vim .config/nvim/init.lua
+vim .config/nvim/init.lua
+dot st
+dot restore .config/nvim
+vim .config/nvim
+dot st
+clear
+rm .local/share/nvim/site/pack/packer/*
+rm -rf .local/share/nvim/site/pack/packer
+vim .config/nvim
+vim .config/nvim
+rm vim.log
+nvim --startuptime vim.log
+cat vim.log
+clear
+nf
+dot st
+clear
+exit
+brew leaves
+vim .config/nvim
+vim .config/nvim
+vim .config/nvim
+vim .config/nvim
+vim .default-npm-packages
+vim .config/nvim
+dot st
+vim .default-npm-packages
+brew uninstall stylua lua-language-server 
+vim .config/nvim
+asdf current nodejs
+asdf install nodejs lts
+asdf uninstall nodejs 16.17.0
+asdf install nodejs lts
+vim
+cd projects/dual/dual-labs-dip
+vim .
+cd
+vim .config/nvim
+vim .config/.zshenv
+ll
+vim .zshenv
+rm vim.log
+chown chown .zshenv diegofigs
+chown diegofigs .zshenv
+ll
+exit
+vim .config/nvim
+asdf install nodejs 14
+vim .config/nvim
+brew install bash
+bash -v
+exit
+bash --version
+brew info bash
+brew doctor
+vim .config/zsh
+nf
+which bash
+bash --version
+brew install gzip tar
+brew install gzip gnu-tar
+vim .config/zsh/extra.zsh
+brew leaves
+brew reinstall grep
+vim .config/zsh/extra.zsh
+exit
+grep --version
+tar --version
+bash --version
+brew leaves
+exit
+vim
+brew install curl
+vim .config/zsh/extra.zsh
+exit
+curl --version
+which curl
+grep curl
+vim
+clear
+nf
+dot st
+vim .config/nvim
+brew uninstall stylua
+vim .config/nvim
+vim .config/nvim
+vim .config/nvim
+vim .config/nvim
+vim .config/nvim
+vim .config/nvim
+vim .config/nvim
+vim .config/nvim
+dot st
+dot diff .config/nvim
+dot restore .config/nvim/lua/user/plugins.lua
+vim .config/nvim
+vim .config/nvim
+vim .config/nvim
+vim .config/nvim
+dot st
+dot diff
+clear
+dot st
+exit
+git st
+dot st
+vim .config
+vim .config/nvim
+dot pull
+rm .config/starship.toml
+dot pull
+clear
+npx alacritty-themes
+clear
+dot st
+dot restore .config/alacritty/alacritty.yml
+vim .config/alacritty/alacritty.yml
+vim .config/alacritty/alacritty.yml
+clear
+vim .config/alacritty/alacritty.yml
+vim .config/alacritty/alacritty.yml
+dot diff
+npx alacritty-themes
+dot t
+dot st
+dot add -p .config/alacritty/alacritty.yml
+dot st
+dot cz
+asdf current nodejs
+dot cz
+asdf uninstall nodejs 16.17.0
+asdf install nodejs lts
+dot cz
+dot cz
+npm i -g commitizen
+dot cz
+asdf install nodejs lts
+asdf global nodejs lts
+asdf current nodejs
+dot cz
+asdf uninstall nodejs 16.13.1
+asdf reshim nodejs lts
+dot cz
+asdf install nodejs lts
+exit
+: 1663363245:0;dot cz
+: 1663363247:0;dot st
+: 1663363253:0;git cz
+: 1663363264:0;vim .default-npm-packages
+: 1663363277:0;clear
+: 1663363458:0;clear
+: 1663363459:0;nf
+: 1663363520:0;dot cz
+: 1663363536:0;vim .config/npm/npmrc
+: 1663363568:0;asdf plugin-remove nodejs
+: 1663363579:0;asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+: 1663363585:0;asdf install nodejs lts
+: 1663363608:0;asdf install nodejs lts
+: 1663363652:0;dot cz
+: 1663363756:0;rm -rf .config/npm
+: 1663363776:0;asdf plugin-remove nodejs
+: 1663363789:0;asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+: 1663363793:0;asdf install nodejs lts
+: 1663363813:0;asdf install nodejs lts
+: 1663363867:0;dot cz
+: 1663363873:0;dot st
+: 1663364153:0;dot cz
+: 1663364648:0;dot st
+: 1663364715:0;dot add .config/npm
+: 1663364717:0;dot st
+: 1663364719:0;dot cz
+: 1663364742:0;dot st
+: 1663364751:0;dot diff
+: 1663365061:0;vim .config/nvim
+: 1663366453:0;vim .config/nvim
+: 1663367002:0;asdf plugin-add lua https://github.com/Stratus3D/asdf-lua.git
+: 1663367134:0;asdf install lua 5.1
+: 1663367182:0;asdf global lua 5.1
+: 1663367186:0;cat .tool-versions
+: 1663367255:0;vim .config/nvim
+: 1663367417:0;cd projects/dual/dual-labs-dip
+: 1663367419:0;vim .
+: 1663367802:0;cd
+: 1663367807:0;vim .config/nvim
+: 1663368109:0;vim projects/dual/dual-labs-dip
+: 1663368159:0;vim projects/call-of-duty
+: 1663368314:0;vim .config/nvim
+: 1663368799:0;vim projects/dual/dual-labs-dip
+: 1663369034:0;vim .config/nvim
+: 1663369083:0;vim projects/dual/dual-labs-dip
+: 1663369171:0;vim .config/nvim
+: 1663369321:0;vim .config/nvim
+: 1663370194:0;vim projects/dual/dual-labs-dip
+: 1663370261:0;vim .config/nvim
+: 1663370434:0;vim projects/dual/dual-labs-dip
+: 1663370446:0;vim .config/nvim
+: 1663370572:0;vim projects/dual/dual-labs-dip
+: 1663370975:0;dot st
+: 1663371151:0;nf
+: 1663371223:0;clear
+: 1663371239:0;dot diff
+: 1663371263:0;vim .config/nvim
+: 1663372319:0;vim .config/nvim
+: 1663372423:0;vim .config/zsh
+: 1663372737:0;vim .bashrc
+: 1663372781:0;vim .config/nvim
+: 1663372842:0;vim .bashrc
+: 1663373035:0;vim .config/nvim
+: 1663373260:0;vim .bashrc
+: 1663373311:0;vim .config/nvim
+: 1663373429:0;vim .config/zsh
+: 1663373640:0;dot st
+: 1663373657:0;vim .config/nvim
+: 1663374180:0;vim .bashrc
+: 1663374230:0;vim .config/nvim
+: 1663374278:0;vim .bashrc
+: 1663374332:0;vim .config/nvim
+: 1663374440:0;vim .bashrc
+: 1663374470:0;vim .config/nvim
+: 1663374658:0;vim .bashrc
+: 1663374814:0;vim .config/nvim
+: 1663374934:0;vim .bashrc
+: 1663375664:0;vim .config/nvim
+: 1663375723:0;vim .bashrc
+: 1663375834:0;vim .bashrc
+: 1663375850:0;rm .bashrc
+: 1663375851:0;bash
+exit
+: 1663375857:0;ll
+: 1663375934:0;cat /etc/shells\~orig
+: 1663375943:0;rm /etc/shells\~orig
+: 1663375951:0;sudo rm /etc/shells\~orig
+: 1663375961:0;cat /etc/shells
+: 1663376000:0;rm -r .vim_runtime
+: 1663376029:0;find ~  -maxdepth 1  -name '.bashrc'
+: 1663376106:0;vim .bash_profile
+: 1663376139:0;vim .bashrc
+: 1663376160:0;vim .bash_profile
+: 1663376242:0;bash
+exit
+: 1663376244:0;ll
+: 1663376251:0;rm .oracle_jre_usage
+: 1663376262:0;xdg-ninja
+: 1663376292:0;clear
+: 1663376296:0;dot st
+: 1663376303:0;vim .config/zsh
+: 1663376322:0;vim .bashrc
+: 1663376376:0;bash
+: 1663376389:0;vim .bashrc
+: 1663376485:0;vim .bashrc
+: 1663376591:0;vim .default-python-packages
+: 1663376603:0;vim .config/nvim
+: 1663376663:0;asdf uninstall python 3.10.6
+: 1663376672:0;asdf install python 3.10.6
+: 1663376920:0;vim .bashrc
+: 1663376942:0;vim .config/zsh
+: 1663377068:0;dot st
+: 1663377074:0;dot diff .config/zsh
+: 1663377108:0;dot add .config/nvim
+: 1663377117:0;dot reset
+: 1663377118:0;dot st
+: 1663377130:0;dot diff .tool-versions
+: 1663377136:0;dot add .tool-versions
+: 1663377143:0;dot diff .zshenv
+: 1663377166:0;dot reset .zshenv
+: 1663377167:0;dot st
+: 1663377173:0;dot restore .zshenv
+: 1663377174:0;dot st
+: 1663377176:0;dot cz
+: 1663377194:0;dot st
+: 1663377205:0;dot diff .default-npm-packages
+: 1663377221:0;dot add .default-* .config/nvim 
+: 1663377223:0;dot st
+: 1663377227:0;dot diff --staged
+: 1663377278:0;vim .config/nvim/lua/user/lsp.lua
+: 1663377355:0;vim .config/nvim/lua/user/lsp.lua
+: 1663377369:0;vim .config/nvim
+: 1663377577:0;dot add .config/nvim
+: 1663377579:0;dot st
+: 1663377583:0;dot cz
+: 1663377623:0;dot st
+: 1663377627:0;dot add .config/zsh
