@@ -5,11 +5,11 @@ window:
   opacity: 0.8
 
 font:
+  size: 14
   normal:
     family: "monospace"
 
 colors:
-  # Default colors
   primary:
     background: '0x24292e'
     foreground: '0xd1d5da'
