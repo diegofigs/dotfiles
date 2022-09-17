@@ -32,6 +32,8 @@ return packer.startup(function(use)
 			require("configs.telescope")
 		end,
 	})
+	use({ "williamboman/mason.nvim" })
+	use({ "williamboman/mason-lspconfig.nvim" })
 	use({ "neovim/nvim-lspconfig" })
 	use({ "jose-elias-alvarez/null-ls.nvim" })
 	use({ "glepnir/lspsaga.nvim", branch = "main" })
@@ -43,7 +45,12 @@ return packer.startup(function(use)
 	use({ "hrsh7th/nvim-cmp" })
 	use({ "L3MON4D3/LuaSnip" })
 	use({ "saadparwaiz1/cmp_luasnip" })
-	use({ "windwp/nvim-autopairs" })
+	use({
+		"windwp/nvim-autopairs",
+		config = function()
+            require("configs.nvim-autopairs")
+		end,
+	})
 	use({ "windwp/nvim-ts-autotag" })
 	use({
 		"nvim-lualine/lualine.nvim",
