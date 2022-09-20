@@ -156,6 +156,10 @@ nvim_lsp["sumneko_lua"].setup({
 	end,
 	capabilities = capabilities,
 })
+nvim_lsp["solidity"].setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
 nvim_lsp["bashls"].setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
@@ -166,6 +170,7 @@ local null_ls = require("null-ls")
 null_ls.setup({
 	sources = {
 		null_ls.builtins.diagnostics.zsh,
+    null_ls.builtins.diagnostics.solhint,
 		null_ls.builtins.diagnostics.luacheck.with({
 			extra_args = { "--globals", "vim" },
 		}),
