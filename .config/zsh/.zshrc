@@ -30,7 +30,7 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 # persistent rehash
 zstyle ':completion:*' rehash true
 
-autoload -U compinit
+autoload -Uz compinit
 compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 
 # create a zkbd compatible hash;
