@@ -74,6 +74,9 @@ cmp.setup.cmdline(":", {
 
 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
 
+local saga = require("lspsaga")
+saga.init_lsp_saga({})
+
 require("mason").setup()
 require("mason-lspconfig").setup({
 	ensure_installed = { "tsserver", "eslint", "sumneko_lua" },
@@ -111,7 +114,9 @@ local on_attach = function(client, bufnr)
 	vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, bufopts)
 	vim.keymap.set("n", "<space>ca", vim.lsp.buf.code_action, bufopts)
 	vim.keymap.set("n", "gr", vim.lsp.buf.references, bufopts)
-	vim.keymap.set("n", "<space>f", vim.lsp.buf.formatting, bufopts)
+	vim.keymap.set("n", "<space>f", function()
+		vim.lsp.buf.format({ async = true })
+	end, bufopts)
 end
 
 local nvim_lsp = require("lspconfig")
@@ -119,8 +124,8 @@ local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protoco
 
 nvim_lsp["tsserver"].setup({
 	on_attach = function(client, bufnr)
-		client.resolved_capabilities.document_formatting = false
-		client.resolved_capabilities.document_range_formatting = false
+		client.server_capabilities.document_formatting = false
+		client.server_capabilities.document_range_formatting = false
 		on_attach(client, bufnr)
 	end,
 	capabilities = capabilities,
@@ -150,8 +155,8 @@ nvim_lsp["sumneko_lua"].setup({
 		},
 	},
 	on_attach = function(client, bufnr)
-		client.resolved_capabilities.document_formatting = false
-		client.resolved_capabilities.document_range_formatting = false
+		client.server_capabilities.document_formatting = false
+		client.server_capabilities.document_range_formatting = false
 		on_attach(client, bufnr)
 	end,
 	capabilities = capabilities,
@@ -170,7 +175,7 @@ local null_ls = require("null-ls")
 null_ls.setup({
 	sources = {
 		null_ls.builtins.diagnostics.zsh,
-    null_ls.builtins.diagnostics.solhint,
+		null_ls.builtins.diagnostics.solhint,
 		null_ls.builtins.diagnostics.luacheck.with({
 			extra_args = { "--globals", "vim" },
 		}),
