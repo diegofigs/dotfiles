@@ -7,10 +7,10 @@ right_format = """
 $username\
 [](bg:red fg:purple)\
 $directory\
-[](fg:red bg:yellow)\
+[](fg:red bg:cyan)\
 $git_branch\
 $git_status\
-[](fg:yellow bg:green)\
+[](fg:cyan bg:green)\
 $c\
 $elixir\
 $elm\
@@ -76,11 +76,11 @@ format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
 symbol = ""
-style = "bg:yellow"
+style = "bg:cyan"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:yellow"
+style = "bg:cyan"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
