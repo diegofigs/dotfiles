@@ -1,7 +1,0 @@
-alacritty-themes
-asdf-vm
-ncurses5-compat-libs
-ttf-meslo-nerd-font-powerlevel10k
-xdg-ninja
-yay
-zsh-theme-powerlevel10k-git
