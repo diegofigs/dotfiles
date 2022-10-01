@@ -1,0 +1,8 @@
+alacritty-themes
+asdf-vm
+ncurses5-compat-libs
+numix-circle-icon-theme-git
+numix-gtk-theme
+otf-nerd-fonts-fira-code
+xdg-ninja
+yay-bin
