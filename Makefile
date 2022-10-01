@@ -1,9 +1,10 @@
 pacman-backup:
 	pacman -Qqetn > pkglist.txt
-	pacman -Qqem > foreignpkglist.txt
+	pacman -Qqm > foreignpkglist.txt
 
 pacman-restore:
-	sudo pacman -S --needed - < pkglist.txt
+	sudo pacman -S --needed --noconfirm - < pkglist.txt
+	yay --needed --noconfirm - < foreignpkglist.txt
 
 pacman-clean:
-	pacman -Qtdq | sudo pacman -Rns -
+	sudo pacman -Rsn $(pacman -Qdtq)
