@@ -48,7 +48,7 @@ return packer.startup(function(use)
 	use({
 		"windwp/nvim-autopairs",
 		config = function()
-            require("configs.nvim-autopairs")
+			require("configs.nvim-autopairs")
 		end,
 	})
 	use({ "windwp/nvim-ts-autotag" })
