@@ -1,6 +1,5 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
-
 fpath=($ZDOTDIR/completions $fpath)
 
 # Load the shell dotfiles, and then some:
@@ -15,6 +14,7 @@ setopt sharehistory
 
 # completers
 zstyle ':completion:*' completer _extensions _complete _approximate
+zstyle ':completion:*:*:git:*' script "$ZDOTDIR"/git-completion.bash
 
 # cache
 zstyle ':completion:*' use-cache on
