@@ -1,9 +1,5 @@
-BREW_PREFIX=/usr/local
-PATH="$BREW_PREFIX/opt/gnu-tar/libexec/gnubin:$PATH"
-PATH="$BREW_PREFIX/opt/grep/libexec/gnubin:$PATH"
-PATH="$BREW_PREFIX/opt/curl/bin:$PATH"
-
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
 zstyle ':completion:*:*:git:*' script $BREW_PREFIX/etc/bash_completion.d/git-completion.bash
 
 source $BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
