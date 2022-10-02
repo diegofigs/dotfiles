@@ -1,5 +1,5 @@
 pacman-backup:
-	pacman -Qqetn > pkglist.txt
+	pacman -Qqen > pkglist.txt
 	pacman -Qqm > foreignpkglist.txt
 
 pacman-restore:
