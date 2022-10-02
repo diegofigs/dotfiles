@@ -1,0 +1,19 @@
+# Aliases
+alias spm='sudo pacman'
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'
+alias ip='ip -color=auto'
+alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+
+# Command completion
+zstyle ':completion:*:pacman:*' force-list always
+zstyle ':completion:*:*:pacman:*' menu yes select
+
+# Plugins
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Initialize asdf
+. /opt/asdf-vm/asdf.sh
+
+eval "$(starship init zsh)"
