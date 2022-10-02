@@ -1,4 +1,5 @@
 # aliases
+alias sudo='sudo '
 alias nf='neofetch'
 alias vim='nvim'
 alias dot='yadm'
