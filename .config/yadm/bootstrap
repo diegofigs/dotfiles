@@ -1,32 +1,36 @@
 #!/usr/bin/env bash
 
-cd $HOME
+cd "$HOME" || return
 
 system_type=$(uname -s)
 
-if [ "$system_type" = "Darwin" ] && ! command -v brew &> /dev/null;
-then
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+if [ "$system_type" = "Darwin" ]; then
+    if ! command -v brew &> /dev/null;
+    then
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    fi
+
+    brew bundle
 fi
 
 if [ "$system_type" = "Linux" ]; then
-  if ! command -v yay &> /dev/null;
-  then
-    sudo pacman -S --needed git base-devel
-    git clone https://aur.archlinux.org/yay-bin.git
-    cd yay-bin
-    makepkg -si --noconfirm
-    cd ..
-    rm -rf yay-bin
-  fi
+    if ! command -v yay &> /dev/null;
+    then
+        sudo pacman -S --needed git base-devel
+        git clone https://aur.archlinux.org/yay-bin.git
+        (cd yay-bin && makepkg -si --noconfirm)
+        rm -rf yay-bin
+    fi
 
-  make pacman-restore
-  
-  asdf plugin add nodejs
-  asdf plugin add python
-  asdf plugin add lua
-  asdf install nodejs lts
-  asdf install python 3.10.6
-  asdf install python 2.7.18
-  asdf install lua 5.1
+    make pacman-restore
+fi
+
+if ! command -v asdf &> /dev/null; then
+    asdf plugin add nodejs
+    asdf plugin add python
+    asdf plugin add lua
+    asdf install nodejs lts
+    asdf install python 3.10.6
+    asdf install python 2.7.18
+    asdf install lua 5.1
 fi
