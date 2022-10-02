@@ -3,7 +3,7 @@ export EDITOR='nvim';
 # Man colorized, no clear screen on quit
 export MANPAGER="less -X -R --use-color -Dd+r -Du+b"
 
-export HISTFILE=${ZDOTDIR:-$HOME}/history
+export HISTFILE="$XDG_STATE_HOME/zsh/history"
 export HISTSIZE=30000;
 export SAVEHIST=24000;
 
