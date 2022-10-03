@@ -1,3 +1,11 @@
+.cache
+.local
+
+.mozilla
+.npm
+.vscode
+.config/yarn/global
+
 # General
 .DS_Store
 .AppleDouble
@@ -19,3 +27,16 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+Applications
+Library
+Desktop
+Documents
+Pictures
+Music
+Movies
+Downloads
+Public
+.Trash
+
+Google Drive
+Dropbox
