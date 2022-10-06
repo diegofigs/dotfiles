@@ -166,6 +166,7 @@ nvim_lsp["solidity"].setup({
 	capabilities = capabilities,
 })
 nvim_lsp["bashls"].setup({
+  filetypes = { "sh", "zsh" },
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
@@ -177,7 +178,7 @@ null_ls.setup({
 		null_ls.builtins.diagnostics.zsh,
 		null_ls.builtins.diagnostics.solhint,
 		null_ls.builtins.diagnostics.luacheck.with({
-			extra_args = { "--globals", "vim" },
+			extra_args = { "--globals", "vim,awesome" },
 		}),
 		null_ls.builtins.formatting.stylua,
 		null_ls.builtins.formatting.prettier,
