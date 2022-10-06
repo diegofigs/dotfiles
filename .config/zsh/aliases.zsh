@@ -1,6 +1,7 @@
 # aliases
 alias sudo='sudo '
 alias nf='neofetch'
+alias pf='pfetch'
 alias vim='nvim'
 alias dot='yadm'
 alias cat='bat'

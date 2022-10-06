@@ -1,3 +1,5 @@
+export PF_INFO="ascii title os wm shell uptime pkgs memory palette"
+
 # Aliases
 alias spm='sudo pacman'
 alias grep='grep --color=auto'
@@ -9,11 +11,5 @@ alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 zstyle ':completion:*:pacman:*' force-list always
 zstyle ':completion:*:*:pacman:*' menu yes select
 
-# Plugins
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # Initialize asdf
 . /opt/asdf-vm/asdf.sh
-
-eval "$(starship init zsh)"
