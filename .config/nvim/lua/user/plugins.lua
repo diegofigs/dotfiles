@@ -78,6 +78,15 @@ return packer.startup(function(use)
 		end,
 	})
 	use({ "mhinz/vim-startify" })
+	use({
+		"catppuccin/nvim",
+		as = "catppuccin",
+		config = function()
+			vim.g.catppuccin_flavour = "macchiato" -- latte, frappe, macchiato, mocha
+			require("catppuccin").setup()
+			vim.api.nvim_command("colorscheme catppuccin")
+		end,
+	})
 	use({ "EdenEast/nightfox.nvim", tag = "v1.0.0" })
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

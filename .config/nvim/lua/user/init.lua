@@ -8,4 +8,4 @@ vim.cmd([[
     autocmd BufWritePost plugins.lua source <afile> | PackerCompile
   augroup end
 ]])
-vim.cmd("colorscheme nightfox")
+--vim.cmd("colorscheme nightfox")
