@@ -166,7 +166,6 @@ nvim_lsp["solidity"].setup({
 	capabilities = capabilities,
 })
 nvim_lsp["bashls"].setup({
-  filetypes = { "sh", "zsh" },
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
