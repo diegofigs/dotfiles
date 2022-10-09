@@ -1,4 +1,4 @@
-export PF_INFO="ascii title os wm shell uptime pkgs memory palette"
+export PF_INFO="ascii title os wm shell editor uptime pkgs palette"
 
 # Aliases
 alias spm='sudo pacman'
