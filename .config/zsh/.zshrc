@@ -99,3 +99,4 @@ key[Control-Right]="${terminfo[kRIT5]}"
 [[ -n "${key[Control-Right]}" ]] && bindkey -- "${key[Control-Right]}" forward-word
 
 source "$ZDOTDIR"/prompt.zsh
+ZLE_RPROMPT_INDENT=0
