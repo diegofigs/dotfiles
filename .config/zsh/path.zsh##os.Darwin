@@ -1,6 +1,0 @@
-export BREW_PREFIX=/usr/local
-
-export PATH="$BREW_PREFIX/opt/gnu-tar/libexec/gnubin:$PATH"
-export PATH="$BREW_PREFIX/opt/grep/libexec/gnubin:$PATH"
-export PATH="$BREW_PREFIX/opt/curl/bin:$PATH"
-

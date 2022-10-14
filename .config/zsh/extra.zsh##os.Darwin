@@ -1,8 +1,0 @@
-# Aliases
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
-
-# Command completion
-zstyle ':completion:*:*:git:*' script $BREW_PREFIX/etc/bash_completion.d/git-completion.bash
-
-# Initialize asdf
-. $BREW_PREFIX/opt/asdf/libexec/asdf.sh

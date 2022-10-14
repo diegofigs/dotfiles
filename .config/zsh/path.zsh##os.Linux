@@ -1,3 +1,0 @@
-export PATH="$XDG_DATA_HOME/solana/install/active_release/bin:$PATH"
-export PATH="$XDG_DATA_HOME/cargo/bin:$PATH"
-export PATH="$HOME/.avm/bin:$PATH"
