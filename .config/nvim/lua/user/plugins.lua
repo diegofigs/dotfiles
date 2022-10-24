@@ -53,6 +53,12 @@ return packer.startup(function(use)
 	})
 	use({ "windwp/nvim-ts-autotag" })
 	use({
+		"terrortylor/nvim-comment",
+		config = function()
+			require("nvim_comment").setup()
+		end,
+	})
+	use({
 		"nvim-lualine/lualine.nvim",
 		config = function()
 			require("configs.lualine")
