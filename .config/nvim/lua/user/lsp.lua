@@ -120,7 +120,7 @@ local on_attach = function(client, bufnr)
 end
 
 local nvim_lsp = require("lspconfig")
-local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 nvim_lsp["tsserver"].setup({
 	on_attach = function(client, bufnr)
@@ -168,6 +168,9 @@ nvim_lsp["solidity"].setup({
 nvim_lsp["bashls"].setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
+})
+nvim_lsp["rust_analyzer"].setup({
+  on_attach = on_attach,
 })
 
 local null_ls = require("null-ls")
