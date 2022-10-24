@@ -1,10 +1,25 @@
 .cache
 .local
-
 .mozilla
 .npm
+projects
+
 .vscode
 .config/yarn/global
+
+Applications
+Library
+Desktop
+Documents
+Pictures
+Music
+Movies
+Downloads
+Public
+.Trash
+
+Google Drive
+Dropbox
 
 # General
 .DS_Store
@@ -27,16 +42,3 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-Applications
-Library
-Desktop
-Documents
-Pictures
-Music
-Movies
-Downloads
-Public
-.Trash
-
-Google Drive
-Dropbox
