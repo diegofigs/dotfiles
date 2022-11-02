@@ -4,7 +4,7 @@ pacman-backup:
 
 pacman-restore:
 	sudo pacman -S --needed --noconfirm - < pkglist.txt
-	yay --needed --noconfirm - < foreignpkglist.txt
+	yay -S --needed --noconfirm - < foreignpkglist.txt
 
 pacman-clean:
 	sudo pacman -Rsn $(pacman -Qdtq)
