@@ -31,7 +31,6 @@ gettext
 glow
 grep
 groff
-grub
 gst-plugin-pipewire
 gzip
 htop
@@ -47,16 +46,15 @@ make
 man-db
 mpc
 mpd
-nano
 neofetch
 neovim
 noto-fonts-emoji
 nvidia
+nvidia-settings
 openssh
 pacman
 patch
 pavucontrol
-pcmanfm-gtk3
 picom
 pipewire
 pipewire-alsa
@@ -81,7 +79,6 @@ ttf-font-awesome
 ttf-liberation
 unclutter
 unzip
-vim
 wget
 which
 wireless_tools
