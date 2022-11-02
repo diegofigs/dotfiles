@@ -10,7 +10,6 @@ export SAVEHIST=24000;
 export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
 
-export PF_INFO="ascii title os wm shell editor uptime pkgs palette"
 export ASDF_CONFIG_FILE="${XDG_CONFIG_HOME}"/asdf/asdfrc
 export ASDF_DATA_DIR="${XDG_DATA_HOME}"/asdf
 
