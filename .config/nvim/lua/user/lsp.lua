@@ -120,7 +120,7 @@ local on_attach = function(client, bufnr)
 end
 
 local nvim_lsp = require("lspconfig")
-local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 nvim_lsp["tsserver"].setup({
 	on_attach = function(client, bufnr)
@@ -130,9 +130,15 @@ nvim_lsp["tsserver"].setup({
 	end,
 	capabilities = capabilities,
 })
-nvim_lsp["eslint"].setup({})
-nvim_lsp["cssls"].setup({})
-nvim_lsp["cssmodules_ls"].setup({})
+nvim_lsp["eslint"].setup({
+	capabilities = capabilities,
+})
+nvim_lsp["cssls"].setup({
+	capabilities = capabilities,
+})
+nvim_lsp["cssmodules_ls"].setup({
+	capabilities = capabilities,
+})
 nvim_lsp["sumneko_lua"].setup({
 	settings = {
 		Lua = {
@@ -170,7 +176,7 @@ nvim_lsp["bashls"].setup({
 	capabilities = capabilities,
 })
 nvim_lsp["rust_analyzer"].setup({
-  on_attach = on_attach,
+	on_attach = on_attach,
 })
 
 local null_ls = require("null-ls")
