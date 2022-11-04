@@ -1,3 +1,5 @@
+# Make vim the default editor.
+export EDITOR='nvim';
 export PF_INFO="ascii title os wm shell editor uptime pkgs palette"
 pfetch
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
@@ -17,9 +19,6 @@ for file in "$ZDOTDIR"/{path,exports,aliases,functions,extra}.sh; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
-
-setopt sharehistory
-setopt histignorespace
 
 # completers
 zstyle ':completion:*' completer _extensions _complete _approximate

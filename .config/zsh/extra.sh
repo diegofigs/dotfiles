@@ -23,4 +23,7 @@ else
 
     # Initialize asdf
     . /opt/asdf-vm/asdf.sh
+
+    # Initialize cargo
+    . $CARGO_HOME/env
 fi
