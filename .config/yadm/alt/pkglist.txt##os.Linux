@@ -15,6 +15,7 @@ bison
 btrfs-progs
 debugedit
 discord
+dunst
 efibootmgr
 exa
 fakeroot
@@ -41,6 +42,7 @@ lightdm
 lightdm-gtk-greeter
 linux
 linux-firmware
+lxappearance-gtk3
 m4
 make
 man-db
@@ -55,6 +57,7 @@ openssh
 pacman
 patch
 pavucontrol
+pcmanfm-gtk3
 picom
 pipewire
 pipewire-alsa
@@ -71,6 +74,7 @@ slock
 smartmontools
 stylua
 sudo
+telegram-desktop
 terminus-font
 texinfo
 tk
