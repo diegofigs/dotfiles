@@ -152,12 +152,6 @@ root.buttons(gears.table.join(
 
 -- {{{ Key bindings
 globalkeys = gears.table.join(
-    awful.key({ modkey }, "d", function()
-        awful.spawn("rofi -show drun")
-    end, { description = "show drun", group = "rofi" }),
-    awful.key({ modkey }, "r", function()
-        awful.spawn("rofi -show run")
-    end, { description = "show run", group = "rofi" }),
     awful.key({ modkey }, "s", hotkeys_popup.show_help, { description = "show help", group = "awesome" }),
     awful.key({ modkey }, "Left", awful.tag.viewprev, { description = "view previous", group = "tag" }),
     awful.key({ modkey }, "Right", awful.tag.viewnext, { description = "view next", group = "tag" }),
@@ -201,6 +195,15 @@ globalkeys = gears.table.join(
     awful.key({ modkey }, "b", function()
         awful.spawn("firefox")
     end, { description = "open a browser", group = "launcher" }),
+    awful.key({ modkey }, "d", function()
+        awful.spawn("rofi -show drun")
+    end, { description = "show drun", group = "launcher" }),
+    awful.key({ modkey }, "r", function()
+        awful.spawn("rofi -show run")
+    end, { description = "show run", group = "launcher" }),
+    awful.key({ modkey }, "p", function()
+        awful.spawn("rofi -show p -modi p:rofi-power-menu")
+    end, { description = "show power-menu", group = "launcher" }),
     awful.key({ modkey, "Control" }, "r", awesome.restart, { description = "reload awesome", group = "awesome" }),
     awful.key({ modkey, "Shift" }, "q", awesome.quit, { description = "quit awesome", group = "awesome" }),
 
@@ -235,12 +238,12 @@ globalkeys = gears.table.join(
         if c then
             c:emit_signal("request::activate", "key.unminimize", { raise = true })
         end
-    end, { description = "restore minimized", group = "client" }),
+    end, { description = "restore minimized", group = "client" })
 
     -- Menubar
-    awful.key({ modkey }, "p", function()
-        menubar.show()
-    end, { description = "show the menubar", group = "launcher" })
+    -- awful.key({ modkey }, "p", function()
+    --     menubar.show()
+    -- end, { description = "show the menubar", group = "launcher" })
 )
 
 clientkeys = gears.table.join(
