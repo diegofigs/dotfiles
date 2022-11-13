@@ -7,4 +7,4 @@ pacman-restore:
 	yay -S --needed --noconfirm - < foreignpkglist.txt
 
 pacman-clean:
-	sudo pacman -Rsn $(pacman -Qdtq)
+	pacman -Qtdq | sudo pacman -Rns -
