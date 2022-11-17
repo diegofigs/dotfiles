@@ -38,7 +38,6 @@ gzip
 htop
 iwd
 libpulse
-libretro-core-info
 libtool
 light-locker
 lightdm
@@ -70,9 +69,6 @@ pipewire-pulse
 pkgconf
 polybar
 ranger
-retroarch
-retroarch-assets-ozone
-retroarch-assets-xmb
 ripgrep
 rofi
 scrot
@@ -98,7 +94,6 @@ xbindkeys
 xdg-utils
 xorg-xinit
 xsel
-xterm
 yadm
 zram-generator
 zsh
