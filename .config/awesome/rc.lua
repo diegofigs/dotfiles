@@ -21,32 +21,32 @@ require("awful.hotkeys_popup.keys")
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
-if awesome.startup_errors then
-	-- naughty.notify({
-	-- 	preset = naughty.config.presets.critical,
-	-- 	title = "Oops, there were errors during startup!",
-	-- 	text = awesome.startup_errors,
-	-- })
-end
+-- if awesome.startup_errors then
+-- 	naughty.notify({
+-- 		preset = naughty.config.presets.critical,
+-- 		title = "Oops, there were errors during startup!",
+-- 		text = awesome.startup_errors,
+-- 	})
+-- end
 
 -- Handle runtime errors after startup
-do
-	local in_error = false
-	awesome.connect_signal("debug::error", function(err)
-		-- Make sure we don't go into an endless error loop
-		if in_error then
-			return
-		end
-		in_error = true
-
-		-- naughty.notify({
-		-- 	preset = naughty.config.presets.critical,
-		-- 	title = "Oops, an error happened!",
-		-- 	text = tostring(err),
-		-- })
-		in_error = false
-	end)
-end
+-- do
+-- 	local in_error = false
+-- 	awesome.connect_signal("debug::error", function(err)
+-- 		-- Make sure we don't go into an endless error loop
+-- 		if in_error then
+-- 			return
+-- 		end
+-- 		in_error = true
+--
+-- 		naughty.notify({
+-- 			preset = naughty.config.presets.critical,
+-- 			title = "Oops, an error happened!",
+-- 			text = tostring(err),
+-- 		})
+-- 		in_error = false
+-- 	end)
+-- end
 -- }}}
 
 -- {{{ Variable definitions
@@ -55,16 +55,16 @@ local chosen_theme = "default"
 beautiful.init(string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), chosen_theme))
 
 -- This is used later as the default terminal and editor to run.
-terminal = "alacritty"
-editor = os.getenv("EDITOR") or "nvim"
-editor_cmd = terminal .. " -e " .. editor
+local terminal = "alacritty"
+local editor = os.getenv("EDITOR") or "nvim"
+local editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
 -- If you do not like this or do not have such a key,
 -- I suggest you to remap Mod4 to another key using xmodmap or other tools.
 -- However, you can use another modifier like Mod1, but it may interact with others.
-modkey = "Mod4"
+local modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
@@ -89,7 +89,7 @@ awful.layout.layouts = {
 
 -- {{{ Menu
 -- Create a launcher widget and a main menu
-myawesomemenu = {
+local myawesomemenu = {
 	{
 		"hotkeys",
 		function()
@@ -107,10 +107,10 @@ myawesomemenu = {
 	},
 }
 
-mymainmenu =
+local mymainmenu =
 	awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon }, { "open terminal", terminal } } })
 
-mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon, menu = mymainmenu })
+-- mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon, menu = mymainmenu })
 
 -- Menubar configuration
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
@@ -151,7 +151,7 @@ root.buttons(gears.table.join(
 -- }}}
 
 -- {{{ Key bindings
-globalkeys = gears.table.join(
+local globalkeys = gears.table.join(
 	awful.key({ modkey }, "s", hotkeys_popup.show_help, { description = "show help", group = "awesome" }),
 	awful.key({ modkey }, "Left", awful.tag.viewprev, { description = "view previous", group = "tag" }),
 	awful.key({ modkey }, "Right", awful.tag.viewnext, { description = "view next", group = "tag" }),
@@ -252,7 +252,7 @@ globalkeys = gears.table.join(
 	-- end, { description = "show the menubar", group = "launcher" })
 )
 
-clientkeys = gears.table.join(
+local clientkeys = gears.table.join(
 	awful.key({ modkey }, "f", function(c)
 		c.fullscreen = not c.fullscreen
 		c:raise()
@@ -337,7 +337,7 @@ for i = 1, 9 do
 	)
 end
 
-clientbuttons = gears.table.join(
+local clientbuttons = gears.table.join(
 	awful.button({}, 1, function(c)
 		c:emit_signal("request::activate", "mouse_click", { raise = true })
 	end),
