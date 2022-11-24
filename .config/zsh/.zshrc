@@ -10,6 +10,10 @@ fi
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+export HISTFILE="$XDG_STATE_HOME/zsh/history"
+export HISTSIZE=10000;
+export SAVEHIST=10000;
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
