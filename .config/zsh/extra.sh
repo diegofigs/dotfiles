@@ -15,7 +15,9 @@ else
     alias grep='grep --color=auto'
     alias diff='diff --color=auto'
     alias ip='ip -color=auto'
-    alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+    alias wget='wget --hsts-file=$XDG_DATA_HOME/wget-hsts'
+    alias xbindkeys='xbindkeys --file=$XDG_CONFIG_HOME/xbindkeys/config'
+    alias nvidia-settigs='nvidia-settings --config=$XDG_CONFIG_HOME/nvidia/settings'
 
     # Command completion
     zstyle ':completion:*:pacman:*' force-list always
