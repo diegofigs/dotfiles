@@ -1,5 +1,3 @@
-# Make vim the default editor.
-export EDITOR='nvim';
 export PF_INFO="ascii title os wm shell editor uptime pkgs palette"
 pfetch
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
