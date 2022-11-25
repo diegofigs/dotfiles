@@ -15,6 +15,7 @@ bison
 btrfs-progs
 debugedit
 discord
+docker
 dunst
 efibootmgr
 exa
