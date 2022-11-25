@@ -18,3 +18,17 @@ function o() {
         open "$@";
     fi;
 }
+
+function pacbackup() {
+    pacman -Qqen > ~/.pkglist.txt
+    pacman -Qqm > ~/.aurlist.txt
+}
+
+function pacrestore() {
+    sudo pacman -S --needed --noconfirm - < ~/.pkglist.txt
+    yay -S --needed --noconfirm - < ~/.aurlist.txt
+}
+
+function pacclean() {
+    pacman -Qtdq | sudo pacman -Rns -
+}
