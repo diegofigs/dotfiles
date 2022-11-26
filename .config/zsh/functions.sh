@@ -32,3 +32,8 @@ function pacrestore() {
 function pacclean() {
     pacman -Qtdq | sudo pacman -Rns -
 }
+
+function pacupdate() {
+    pacman -Syu
+    yay -Syu
+}
