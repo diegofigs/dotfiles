@@ -93,7 +93,8 @@ return packer.startup(function(use)
 			vim.api.nvim_command("colorscheme catppuccin")
 		end,
 	})
-	use({ "EdenEast/nightfox.nvim", tag = "v1.0.0" })
+	use({ "lambdalisue/suda.vim" })
+	-- use({ "EdenEast/nightfox.nvim", tag = "v1.0.0" })
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if packer_bootstrap then
