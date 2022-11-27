@@ -2,6 +2,8 @@
 asdf-vm
 brave-bin
 catppuccin-gtk-theme-macchiato
+greetd
+greetd-tuigreet
 keybase-bin
 nix-zsh-completions
 pfetch
@@ -12,5 +14,6 @@ spotify
 ttf-meslo-nerd-font-powerlevel10k
 wlroots-nvidia
 xdg-ninja
+xinit-xsession
 yay-bin
 zsh-theme-powerlevel10k-git

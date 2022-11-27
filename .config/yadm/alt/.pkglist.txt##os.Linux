@@ -98,6 +98,7 @@ wpa_supplicant
 xbindkeys
 xdg-utils
 xorg-xinit
+xorg-xlsclients
 xorg-xwayland
 xsel
 yadm
