@@ -1,4 +1,4 @@
-export PF_INFO="ascii title os wm shell editor uptime pkgs palette"
+export PF_INFO="ascii title os wm shell editor uptime pkgs memory palette"
 pfetch
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
