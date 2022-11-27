@@ -5,10 +5,12 @@ catppuccin-gtk-theme-macchiato
 keybase-bin
 nix-zsh-completions
 pfetch
+rofi-lbonn-wayland-git
 rofi-power-menu
 snapd
 spotify
 ttf-meslo-nerd-font-powerlevel10k
+wlroots-nvidia
 xdg-ninja
 yay-bin
 zsh-theme-powerlevel10k-git
