@@ -14,7 +14,6 @@ binutils
 bison
 btrfs-progs
 debugedit
-discord
 docker
 dunst
 efibootmgr
@@ -71,12 +70,15 @@ pkgconf
 polybar
 ranger
 ripgrep
-rofi
 scrot
 sed
 smartmontools
 stylua
 sudo
+sway
+swaybg
+swayidle
+swaylock
 telegram-desktop
 terminus-font
 texinfo
@@ -87,6 +89,7 @@ ttf-font-awesome
 ttf-liberation
 unclutter
 unzip
+waybar
 wget
 which
 wireless_tools
@@ -95,6 +98,7 @@ wpa_supplicant
 xbindkeys
 xdg-utils
 xorg-xinit
+xorg-xwayland
 xsel
 yadm
 zram-generator
