@@ -4,7 +4,8 @@ export XDG_DATA_HOME="$HOME"/.local/share
 export XDG_STATE_HOME="$HOME"/.local/state
 
 export ZDOTDIR="$HOME"/.config/zsh
-export EDITOR='nvim';
-export VISUAL='nvim';
+export EDITOR='nvim'
+export VISUAL='nvim'
+export BROWSER='firefox'
 
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
