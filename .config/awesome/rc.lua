@@ -207,9 +207,9 @@ local globalkeys = gears.table.join(
 	awful.key({}, "Print", function()
 		awful.spawn("flameshot gui")
 	end, { description = "show flameshot gui", group = "launcher" }),
-	awful.key({}, "F12", function()
-		awful.spawn("light-locker-command -l")
-	end, { description = "lock screen", group = "launcher" }),
+	-- awful.key({}, "F12", function()
+	-- 	awful.spawn("light-locker-command -l")
+	-- end, { description = "lock screen", group = "launcher" }),
 	awful.key({ modkey, "Control" }, "r", awesome.restart, { description = "reload awesome", group = "awesome" }),
 	awful.key({ modkey, "Shift" }, "q", awesome.quit, { description = "quit awesome", group = "awesome" }),
 
