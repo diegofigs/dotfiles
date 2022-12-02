@@ -25,22 +25,8 @@ else
     zstyle ':completion:*:pacman:*' force-list always
     zstyle ':completion:*:*:pacman:*' menu yes select
 
-    ##### asdf #####
-    # placeholder asdf shell function
-    # On first use, it will set asdf up properly which will replace the `asdf`
-    # shell function with the real one
-    asdf() {
-        if [[ -d '/opt/asdf-vm' ]]; then
-            unfunction "$0"
-            # Initialize asdf
-            . /opt/asdf-vm/asdf.sh
-            # invoke the real asdf function now
-            asdf "$@"
-        else
-            echo "asdf is not installed" >&2
-            return 1
-        fi
-    }
+    # Initialize asdf
+    . /opt/asdf-vm/asdf.sh
 
     # Initialize cargo
     . $CARGO_HOME/env

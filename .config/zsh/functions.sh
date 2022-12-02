@@ -37,3 +37,4 @@ function pacupdate() {
     pacman -Syu
     yay -Syu
 }
+
