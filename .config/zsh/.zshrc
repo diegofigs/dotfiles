@@ -1,8 +1,9 @@
 # Profiling
 zmodload zsh/zprof
 
-# export PF_INFO="ascii title os wm shell editor uptime pkgs memory palette"
-# pfetch
+export PF_INFO="ascii title os wm shell editor uptime pkgs memory palette"
+pfetch
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -42,7 +43,7 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # persistent rehash
-zstyle ':completion:*' rehash true
+# zstyle ':completion:*' rehash true
 
 # create a zkbd compatible hash;
 # to add other keys to this hash, see: man 5 terminfo
