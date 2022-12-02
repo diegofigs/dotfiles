@@ -181,12 +181,12 @@ local globalkeys = gears.table.join(
 		awful.screen.focus_relative(-1)
 	end, { description = "focus the previous screen", group = "screen" }),
 	awful.key({ modkey }, "u", awful.client.urgent.jumpto, { description = "jump to urgent client", group = "client" }),
-	awful.key({ modkey }, "Tab", function()
-		awful.client.focus.history.previous()
-		if client.focus then
-			client.focus:raise()
-		end
-	end, { description = "go back", group = "client" }),
+	-- awful.key({ modkey }, "Tab", function()
+	-- 	awful.client.focus.history.previous()
+	-- 	if client.focus then
+	-- 		client.focus:raise()
+	-- 	end
+	-- end, { description = "go back", group = "client" }),
 
 	-- Standard program
 	awful.key({ modkey }, "Return", function()
@@ -204,6 +204,9 @@ local globalkeys = gears.table.join(
 	awful.key({ modkey }, "p", function()
 		awful.spawn("rofi -show p -modi p:rofi-power-menu")
 	end, { description = "show power-menu", group = "launcher" }),
+	awful.key({ modkey }, "Tab", function()
+		awful.spawn("rofi -show window")
+	end, { description = "show window switcher", group = "launcher" }),
 	awful.key({}, "Print", function()
 		awful.spawn("flameshot gui")
 	end, { description = "show flameshot gui", group = "launcher" }),
