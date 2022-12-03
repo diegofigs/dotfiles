@@ -32,13 +32,13 @@ nnoremap("gh", "<cmd>Lspsaga lsp_finder<CR>", sagaopts)
 
 -- Code action
 nnoremap("<leader>ca", "<cmd>Lspsaga code_action<CR>", sagaopts)
-vnoremap("<leader>ca", "<cmd><C-U>Lspsaga range_code_action<CR>", sagaopts)
+vnoremap("<leader>ca", "<cmd>Lspsaga code_action<CR>", sagaopts)
 
 -- Rename
 nnoremap("<leader>gr", "<cmd>Lspsaga rename<CR>", sagaopts)
 
 -- Definition preview
-nnoremap("<leader>gd", "<cmd>Lspsaga preview_definition<CR>", sagaopts)
+nnoremap("gd", "<cmd>Lspsaga peek_definition<CR>", sagaopts)
 
 -- Show line diagnostics
 vnoremap("<leader>cd", "<cmd>Lspsaga show_line_diagnostics<CR>", sagaopts)
@@ -62,7 +62,7 @@ end, sagaopts)
 nnoremap("<leader>o", "<cmd>LSoutlineToggle<CR>", sagaopts)
 
 -- Hover Doc
-nnoremap("<leader>K", "<cmd>Lspsaga hover_doc<CR>", sagaopts)
+nnoremap("K", "<cmd>Lspsaga hover_doc<CR>", sagaopts)
 
 -- Float terminal
 nnoremap("<A-d>", "<cmd>Lspsaga open_floaterm<CR>", sagaopts)
