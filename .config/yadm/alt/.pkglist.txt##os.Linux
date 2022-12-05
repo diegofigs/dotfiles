@@ -12,6 +12,7 @@ base
 bat
 binutils
 bison
+btop
 btrfs-progs
 debugedit
 docker
@@ -39,9 +40,6 @@ htop
 iwd
 libpulse
 libtool
-light-locker
-lightdm
-lightdm-gtk-greeter
 linux
 linux-firmware
 lxappearance-gtk3
@@ -68,11 +66,13 @@ pipewire-jack
 pipewire-pulse
 pkgconf
 polybar
+procs
 ranger
 ripgrep
 scrot
 sed
 smartmontools
+starship
 stylua
 sudo
 sway
