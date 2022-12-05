@@ -11,17 +11,17 @@ if [ `uname -s` = "Darwin" ]; then
 else
     # Aliases
     alias spm='sudo pacman'
-    alias i='yay -Sy'
-    alias iu='yay -Syu'
-    alias u='yay -R'
-    alias us='yay -Rs'
-    alias usu='yay -Rsu'
+    alias install='yay -Sy'
+    alias update='yay -Syu'
+    alias remove='yay -R'
+    alias sremove='yay -Rs'
+    alias suremove='yay -Rsu'
     alias grep='grep --color=auto'
     alias diff='diff --color=auto'
     alias ip='ip -color=auto'
     alias wget='wget --hsts-file=$XDG_DATA_HOME/wget-hsts'
-    alias xbindkeys='xbindkeys --file=$XDG_CONFIG_HOME/xbindkeys/config'
-    alias nvidia-settigs='nvidia-settings --config=$XDG_CONFIG_HOME/nvidia/settings'
+    alias xbindkeys='xbindkeys -f $XDG_CONFIG_HOME/xbindkeys/config'
+    alias nvidia-settings='nvidia-settings --config=$XDG_CONFIG_HOME/nvidia/settings'
 
     # Command completion
     zstyle ':completion:*:pacman:*' force-list always
