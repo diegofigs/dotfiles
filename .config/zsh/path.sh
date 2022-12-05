@@ -1,5 +1,4 @@
-system_type=$(uname -s)
-if [ "$system_type" = "Darwin" ]; then
+if [ `uname -s` = "Darwin" ]; then
     export BREW_PREFIX=/usr/local
 
     export PATH="$BREW_PREFIX/opt/gnu-tar/libexec/gnubin:$PATH"
