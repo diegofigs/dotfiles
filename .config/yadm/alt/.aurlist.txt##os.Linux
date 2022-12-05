@@ -4,6 +4,7 @@ brave-bin
 catppuccin-gtk-theme-macchiato
 greetd
 greetd-tuigreet
+insomnia
 keybase-bin
 nix-zsh-completions
 pfetch
@@ -11,9 +12,9 @@ rofi-lbonn-wayland-git
 rofi-power-menu
 snapd
 spotify
+swayshot
 ttf-meslo-nerd-font-powerlevel10k
 wlroots-nvidia
 xdg-ninja
-xinit-xsession
 yay-bin
 zsh-theme-powerlevel10k-git
