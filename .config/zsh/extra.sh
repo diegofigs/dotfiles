@@ -1,5 +1,4 @@
-system_type=$(uname -s)
-if [ "$system_type" = "Darwin" ]; then
+if [ `uname -s` = "Darwin" ]; then
     # Aliases
     alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
     alias grep='grep -n --color'
@@ -13,7 +12,10 @@ else
     # Aliases
     alias spm='sudo pacman'
     alias i='yay -Sy'
-    alias u='yay -Rsu'
+    alias iu='yay -Syu'
+    alias u='yay -R'
+    alias us='yay -Rs'
+    alias usu='yay -Rsu'
     alias grep='grep --color=auto'
     alias diff='diff --color=auto'
     alias ip='ip -color=auto'
