@@ -11,11 +11,11 @@ if [ `uname -s` = "Darwin" ]; then
 else
     # Aliases
     alias spm='sudo pacman'
-    alias install='yay -Sy'
+    alias add='yay -Sy'
     alias update='yay -Syu'
     alias remove='yay -R'
-    alias sremove='yay -Rs'
-    alias suremove='yay -Rsu'
+    alias remove-s='yay -Rs'
+    alias remove-su='yay -Rsu'
     alias grep='grep --color=auto'
     alias diff='diff --color=auto'
     alias ip='ip -color=auto'
