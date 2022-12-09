@@ -1,5 +1,7 @@
 if [ `uname -s` = "Darwin" ]; then
-    export BREW_PREFIX=/usr/local
+    eval $(/opt/homebrew/bin/brew shellenv)
+
+    export BREW_PREFIX=$(brew --prefix)
 
     export PATH="$BREW_PREFIX/opt/gnu-tar/libexec/gnubin:$PATH"
     export PATH="$BREW_PREFIX/opt/grep/libexec/gnubin:$PATH"
