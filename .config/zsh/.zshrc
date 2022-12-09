@@ -98,6 +98,10 @@ key[Control-Right]="${terminfo[kRIT5]}"
 [[ -n "${key[Control-Left]}"  ]] && bindkey -- "${key[Control-Left]}"  backward-word
 [[ -n "${key[Control-Right]}" ]] && bindkey -- "${key[Control-Right]}" forward-word
 
+if type brew &>/dev/null; then
+    FPATH=$BREW_PREFIX/share/zsh-completions:$FPATH
+fi
+
 autoload -Uz compinit && compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 source "$ZDOTDIR"/prompt.zsh
 ZLE_RPROMPT_INDENT=0
