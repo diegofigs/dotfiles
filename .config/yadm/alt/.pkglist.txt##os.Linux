@@ -8,13 +8,10 @@ archlinux-keyring
 autoconf
 automake
 awesome
-base
 bat
 binutils
-bison
 btop
 btrfs-progs
-debugedit
 docker
 dunst
 efibootmgr
@@ -26,7 +23,6 @@ file
 findutils
 firefox
 flameshot
-flex
 gawk
 gcc
 geany
@@ -38,6 +34,7 @@ gst-plugin-pipewire
 gzip
 htop
 iwd
+libnotify
 libpulse
 libtool
 linux
@@ -64,14 +61,13 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
-pkgconf
 polybar
 procs
+python-chardet
+python-setuptools
 ranger
 ripgrep
-scrot
 sed
-smartmontools
 starship
 stylua
 sudo
@@ -81,7 +77,6 @@ swayidle
 swaylock
 telegram-desktop
 terminus-font
-texinfo
 tk
 tmux
 ttf-firacode-nerd
@@ -98,7 +93,6 @@ wpa_supplicant
 xbindkeys
 xdg-utils
 xorg-xinit
-xorg-xlsclients
 xorg-xwayland
 xsel
 yadm
