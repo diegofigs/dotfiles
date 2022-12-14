@@ -102,9 +102,6 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 # zstyle ':completion:*' rehash true
 
 if [ "$(uname -s)" = "Darwin" ]; then
-    # Command completion
-    # zstyle ':completion:*:*:git:*' script $BREW_PREFIX/etc/bash_completion.d/git-completion.bash
-
     # Initialize asdf
     . $BREW_PREFIX/opt/asdf/libexec/asdf.sh
 
@@ -117,10 +114,10 @@ else
 
     # Initialize asdf
     . /opt/asdf-vm/asdf.sh
-
-    # Initialize cargo
-    . $CARGO_HOME/env
 fi
+
+# Initialize cargo
+. $CARGO_HOME/env
 
 autoload -Uz compinit && compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 source "$ZDOTDIR"/prompt.zsh
