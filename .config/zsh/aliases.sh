@@ -10,3 +10,22 @@ alias l='ls -l'
 alias la='ls -la'
 alias ll='la'
 alias lf='ls -lF'
+
+
+if [ "$(uname -s)" = "Darwin" ]; then
+    alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+    alias grep='grep --color'
+else
+    alias spm='sudo pacman'
+    alias add='yay -Sy'
+    alias update='yay -Syu'
+    alias remove='yay -R'
+    alias remove-s='yay -Rs'
+    alias remove-su='yay -Rsu'
+    alias grep='grep --color=auto'
+    alias diff='diff --color=auto'
+    alias ip='ip -color=auto'
+    alias wget='wget --hsts-file=$XDG_DATA_HOME/wget-hsts'
+    alias xbindkeys='xbindkeys -f $XDG_CONFIG_HOME/xbindkeys/config'
+    alias nvidia-settings='nvidia-settings --config=$XDG_CONFIG_HOME/nvidia/settings'
+fi
