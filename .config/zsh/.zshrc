@@ -11,9 +11,12 @@ zmodload zsh/zprof
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+# Set up history file
 export HISTFILE="$XDG_STATE_HOME/zsh/history"
 export HISTSIZE=10000;
 export SAVEHIST=10000;
+
+setopt appendhistory
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -22,25 +25,6 @@ for file in "$ZDOTDIR"/{path,exports,aliases,functions,extra}.sh; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
-
-# completers
-zstyle ':completion:*' completer _extensions _complete _approximate
-
-# cache
-zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
-
-# arrow-driven tab menu
-zstyle ':completion:*' menu select
-
-# colors
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-
-# case insensitive, substring path-completion
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-
-# persistent rehash
-# zstyle ':completion:*' rehash true
 
 # create a zkbd compatible hash;
 # to add other keys to this hash, see: man 5 terminfo
@@ -98,8 +82,44 @@ key[Control-Right]="${terminfo[kRIT5]}"
 [[ -n "${key[Control-Left]}"  ]] && bindkey -- "${key[Control-Left]}"  backward-word
 [[ -n "${key[Control-Right]}" ]] && bindkey -- "${key[Control-Right]}" forward-word
 
-if type brew &>/dev/null; then
+# completers
+zstyle ':completion:*' completer _extensions _complete _approximate
+
+# cache
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
+
+# arrow-driven tab menu
+zstyle ':completion:*' menu select
+
+# colors
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
+# case insensitive, substring path-completion
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+# persistent rehash
+# zstyle ':completion:*' rehash true
+
+if [ "$(uname -s)" = "Darwin" ]; then
+    # Command completion
+    # zstyle ':completion:*:*:git:*' script $BREW_PREFIX/etc/bash_completion.d/git-completion.bash
+
+    # Initialize asdf
+    . $BREW_PREFIX/opt/asdf/libexec/asdf.sh
+
+    FPATH=$BREW_PREFIX/share/zsh/site-functions:$FPATH
     FPATH=$BREW_PREFIX/share/zsh-completions:$FPATH
+else
+    # Command completion
+    zstyle ':completion:*:pacman:*' force-list always
+    zstyle ':completion:*:*:pacman:*' menu yes select
+
+    # Initialize asdf
+    . /opt/asdf-vm/asdf.sh
+
+    # Initialize cargo
+    . $CARGO_HOME/env
 fi
 
 autoload -Uz compinit && compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
