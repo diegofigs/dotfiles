@@ -14,8 +14,17 @@ jobs:
         uses: ludeeus/action-shellcheck@master
         with:
           ignore_names: .zshrc .zlogin .zprofile
+          scandir: ".config/zsh"
+          additional_files: ".config/yadm/bootstrap" 
+  shellcheck-bootstrap:
+    name: Shellcheck - polybar
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run ShellCheck
+        uses: ludeeus/action-shellcheck@master
+        with:
           scandir: ".config/polybar/scripts"
-          additional_files: ".config/yadm/bootstrap .config/zsh/*"
   stylua:
     name: StyLua
     runs-on: ubuntu-latest
