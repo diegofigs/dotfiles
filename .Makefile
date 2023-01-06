@@ -1,7 +1,5 @@
 pacrestore:
-	sudo pacman -S --needed --noconfirm - < ~/.pkglist.txt
-	yay -S --needed --noconfirm - < ~/.aurlist.txt
-
+	yay -S --needed --noconfirm --removemake - < ~/.pkglist.txt
+	yay -S --needed --noconfirm --removemake - < ~/.aurlist.txt
 pacclean:
-	pacman -Qtdq | sudo pacman -Rns -
-
+	yay -Yc
