@@ -26,7 +26,7 @@ pacbackup() {
 }
 
 pacrestore() {
-    sudo pacman -S --needed --noconfirm - < ~/.pkglist.txt
+    yay -S --needed --noconfirm - < ~/.pkglist 
     yay -S --needed --noconfirm - < ~/.aurlist.txt
 }
 
