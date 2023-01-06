@@ -34,7 +34,7 @@ require("gitsigns").setup({
 		end, { expr = true })
 
 		-- Actions
-    nnoremap("<leader>hs", ":Gitsigns stage_hunk<CR>")
+		nnoremap("<leader>hs", ":Gitsigns stage_hunk<CR>")
 		vnoremap("<leader>hs", ":Gitsigns stage_hunk<CR>")
 		nnoremap("<leader>hr", ":Gitsigns reset_hunk<CR>")
 		vnoremap("<leader>hr", ":Gitsigns reset_hunk<CR>")
