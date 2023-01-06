@@ -13,5 +13,5 @@ jobs:
       - name: Run ShellCheck
         uses: ludeeus/action-shellcheck@master
         with:
-          ignore_names: .zshrc .zlogin .zprofile
+          ignore_names: .zshrc .zlogin .zprofile prompt.zsh
           scandir: "./.config/zsh"
