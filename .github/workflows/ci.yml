@@ -4,8 +4,6 @@ on:
       - main
 
 name: "CI"
-permissions: {}
-
 jobs:
   shellcheck:
     name: Shellcheck
