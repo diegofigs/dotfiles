@@ -22,7 +22,7 @@ if [ "$system_type" = "Linux" ]; then
         rm -rf yay-bin
     fi
 
-    make pacman-restore
+    make -f ~/.Makefile pacrestore
 fi
 
 if command -v asdf &> /dev/null; then
