@@ -13,7 +13,7 @@ jobs:
       - name: Run ShellCheck
         uses: ludeeus/action-shellcheck@master
         with:
-          scandir: ".config/zsh/*.sh"
+          scandir: "./.config/zsh"
           additional_files: ".config/polybar/scripts/*.sh .config/yadm/bootstrap"
   stylua:
     name: StyLua
