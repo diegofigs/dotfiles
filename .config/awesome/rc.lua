@@ -68,7 +68,7 @@ local modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    awful.layout.suit.tile,
+	awful.layout.suit.tile,
 	awful.layout.suit.fair,
 	awful.layout.suit.floating,
 	--awful.layout.suit.tile.left,
@@ -207,6 +207,9 @@ local globalkeys = gears.table.join(
 	awful.key({ modkey }, "Tab", function()
 		awful.spawn("rofi -show window")
 	end, { description = "show window switcher", group = "launcher" }),
+	awful.key({ modkey }, ".", function()
+		awful.spawn("rofimoji")
+	end, { description = "show emoji-menu", group = "launcher" }),
 	awful.key({}, "Print", function()
 		awful.spawn("flameshot gui")
 	end, { description = "show flameshot gui", group = "launcher" }),
