@@ -1,4 +1,4 @@
-require("user.plugins")
+require("user.options")
 require("user.keymaps")
 require("user.lsp")
 
@@ -8,4 +8,3 @@ vim.cmd([[
     autocmd BufWritePost plugins.lua source <afile> | PackerCompile
   augroup end
 ]])
---vim.cmd("colorscheme nightfox")
