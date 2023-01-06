@@ -5,31 +5,21 @@ on:
 
 name: "CI"
 jobs:
-  shellcheck-zsh:
-    name: Shellcheck - zsh
+  shellcheck:
+    name: Shellcheck
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run ShellCheck
+      - name: Run ShellCheck (zsh)
         uses: ludeeus/action-shellcheck@master
         with:
           ignore_names: .zshrc .zlogin .zprofile prompt.zsh
           scandir: ".config/zsh"
-  shellcheck-yadm:
-    name: Shellcheck - yadm
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Run ShellCheck
+      - name: Run ShellCheck (yadm)
         uses: ludeeus/action-shellcheck@master
         with:
           scandir: ".config/yadm" 
-  shellcheck-polybar:
-    name: Shellcheck - polybar
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Run ShellCheck
+      - name: Run ShellCheck (polybar)
         uses: ludeeus/action-shellcheck@master
         with:
           scandir: ".config/polybar/scripts"
