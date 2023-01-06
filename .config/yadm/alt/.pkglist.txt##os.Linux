@@ -67,6 +67,7 @@ python-chardet
 python-setuptools
 ranger
 ripgrep
+rofi
 rofimoji
 sed
 starship
