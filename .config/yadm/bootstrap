@@ -23,6 +23,7 @@ if [ "$system_type" = "Linux" ]; then
     fi
 
     make -f ~/.Makefile pacrestore
+    make -f ~/.Makefile pacclean
 fi
 
 if command -v asdf &> /dev/null; then

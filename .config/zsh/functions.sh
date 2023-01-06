@@ -26,12 +26,12 @@ pacbackup() {
 }
 
 pacrestore() {
-    yay -S --needed --noconfirm - < ~/.pkglist 
-    yay -S --needed --noconfirm - < ~/.aurlist.txt
+    yay -S --needed --noconfirm - < ~/.pkglist.txt
+    yay -S --needed --noconfirm --removemake --answerclean NotInstalled - < ~/.aurlist.txt
 }
 
 pacclean() {
-    pacman -Qtdq | sudo pacman -Rns -
+    yay -Yc
 }
 
 git-signers() {
