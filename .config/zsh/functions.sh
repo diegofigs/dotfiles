@@ -33,3 +33,7 @@ pacrestore() {
 pacclean() {
     pacman -Qtdq | sudo pacman -Rns -
 }
+
+git-signers() {
+    ruby ~/.config/scripts/get_authorized_signers.rb
+}
