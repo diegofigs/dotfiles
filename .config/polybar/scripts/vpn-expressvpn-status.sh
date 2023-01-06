@@ -21,9 +21,8 @@ expressvpn_status() {
 case "$1" in
     --toggle)
         expressvpn_toggle
-    ;;
+        ;;
     *)
         expressvpn_status
-    ;;
+        ;;
 esac
-
