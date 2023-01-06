@@ -32,11 +32,22 @@ return packer.startup(function(use)
 			require("configs.telescope")
 		end,
 	})
-	use({ "williamboman/mason.nvim" })
+	use({
+		"williamboman/mason.nvim",
+		config = function()
+			require("configs.mason")
+		end,
+	})
 	use({ "williamboman/mason-lspconfig.nvim" })
 	use({ "neovim/nvim-lspconfig" })
 	use({ "jose-elias-alvarez/null-ls.nvim" })
-	use({ "glepnir/lspsaga.nvim", branch = "main" })
+	use({
+		"glepnir/lspsaga.nvim",
+		branch = "main",
+		config = function()
+			require("configs.mason")
+		end,
+	})
 	use({ "onsails/lspkind.nvim" })
 	use({ "hrsh7th/cmp-nvim-lsp" })
 	use({ "hrsh7th/cmp-buffer" })

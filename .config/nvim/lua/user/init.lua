@@ -1,5 +1,6 @@
 require("user.options")
 require("user.keymaps")
+require("user.completion")
 require("user.lsp")
 
 vim.cmd([[
