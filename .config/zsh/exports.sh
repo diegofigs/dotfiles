@@ -1,3 +1,4 @@
+#! /usr/bin/env bash
 # Man colorized, no clear screen on quit
 export MANPAGER="less -X -R --use-color -Dd+r -Du+b"
 export LANG='en_US.UTF-8';

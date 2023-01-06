@@ -1,3 +1,4 @@
+#! /usr/bin/env bash
 # aliases
 alias sudo='sudo '
 alias nf='neofetch'

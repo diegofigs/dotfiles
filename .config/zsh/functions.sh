@@ -1,3 +1,4 @@
+#! /usr/bin/env bash
 # Normalize `open` across Linux, macOS, and Windows.
 # This is needed to make the `o` function (see below) cross-platform.
 if [ ! "$(uname -s)" = 'Darwin' ]; then
@@ -11,7 +12,7 @@ fi
 
 # `o` with no arguments opens the current directory, otherwise opens the given
 # location
-function o() {
+o() {
     if [ $# -eq 0 ]; then
         open .;
     else
@@ -19,16 +20,16 @@ function o() {
     fi;
 }
 
-function pacbackup() {
+pacbackup() {
     pacman -Qqen > ~/.pkglist.txt
     pacman -Qqm > ~/.aurlist.txt
 }
 
-function pacrestore() {
+pacrestore() {
     sudo pacman -S --needed --noconfirm - < ~/.pkglist.txt
     yay -S --needed --noconfirm - < ~/.aurlist.txt
 }
 
-function pacclean() {
+pacclean() {
     pacman -Qtdq | sudo pacman -Rns -
 }
