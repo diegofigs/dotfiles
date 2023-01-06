@@ -1,5 +1,4 @@
-system_type=$(uname -s)
-if [ "$system_type" = "Darwin" ]; then
+if [ "$(uname -s)" = "Darwin" ]; then
     source $BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
     source $BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
     # source $BREW_PREFIX/opt/powerlevel10k/powerlevel10k.zsh-theme
