@@ -24,4 +24,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: 0.15.3
-          args: --check .config/awesome
+          args: --check .config/awesome .config/nvim/lua
