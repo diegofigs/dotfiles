@@ -67,6 +67,7 @@ python-chardet
 python-setuptools
 ranger
 ripgrep
+rofimoji
 sed
 starship
 stylua
@@ -92,6 +93,7 @@ wireplumber
 wpa_supplicant
 xbindkeys
 xdg-utils
+xdotool
 xorg-xinit
 xorg-xwayland
 xsel
