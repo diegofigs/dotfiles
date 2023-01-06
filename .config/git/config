@@ -11,6 +11,8 @@
 	last = log -1 HEAD
 [push]
 	default = current
+[commit]
+	gpgSign = true
 [core]
 	pager = less --raw-control-chars
 [pull]
@@ -19,3 +21,5 @@
 	defaultBranch = main
 [gpg]
 	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = /Users/diegofigs/.ssh/allowed_signers
