@@ -15,3 +15,13 @@ jobs:
         with:
           ignore_names: .zshrc .zlogin .zprofile prompt.zsh
           scandir: "./.config/zsh"
+  stylua:
+    name: StyLua
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: JohnnyMorganz/stylua-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: 0.15.3
+          args: --check .config/awesome
