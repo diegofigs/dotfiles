@@ -120,5 +120,4 @@ fi
 . $CARGO_HOME/env
 
 autoload -Uz compinit && compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
-source "$ZDOTDIR"/prompt.zsh
-ZLE_RPROMPT_INDENT=0
+source "$ZDOTDIR"/prompt.sh
