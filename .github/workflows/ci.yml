@@ -1,0 +1,14 @@
+on:
+  push:
+    branches:
+      - master
+
+name: "CI"
+permissions: {}
+
+jobs:
+  shellcheck:
+    - name: Run ShellCheck
+      uses: ludeeus/action-shellcheck@master
+      with:
+        scandir: "./.config/zsh"
