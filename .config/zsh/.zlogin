@@ -1,3 +1,4 @@
+#! /usr/bin/zsh
 # Execute code in the background
 {
     zcompdump="$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
