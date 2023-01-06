@@ -13,8 +13,9 @@ jobs:
       - name: Run ShellCheck
         uses: ludeeus/action-shellcheck@master
         with:
-          scandir: "./.config/zsh"
-          additional_files: ".config/yadm/bootstrap .config/polybar/scripts/*"
+          ignore_names: .zshrc .zlogin .zprofile
+          scandir: ".config/polybar/scripts"
+          additional_files: ".config/yadm/bootstrap .config/zsh/*"
   stylua:
     name: StyLua
     runs-on: ubuntu-latest
