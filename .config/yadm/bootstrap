@@ -22,8 +22,9 @@ if [ "$system_type" = "Linux" ]; then
         rm -rf yay-bin
     fi
 
-    make -f ~/.Makefile pacrestore
-    make -f ~/.Makefile pacclean
+	yay -S --needed --noconfirm --removemake - < ~/.pkglist.txt
+	yay -S --needed --noconfirm --removemake - < ~/.aurlist.txt
+    yay -Yc
 fi
 
 if command -v asdf &> /dev/null; then
