@@ -41,4 +41,4 @@ jobs:
       - uses: karancode/yamllint-github-action@master
         with:
           yamllint_file_or_dir: '.config/alacritty'
-          yamllint_config_filepath: '.config/alacritty/.ymllint.yml'
+          yamllint_config_filepath: '.config/alacritty/.yamllint.yml'
