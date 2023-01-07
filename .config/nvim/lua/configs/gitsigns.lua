@@ -1,7 +1,3 @@
-local Remap = require("core.keymap")
-local nnoremap = Remap.nnoremap
-local vnoremap = Remap.vnoremap
-
 require("gitsigns").setup({
 	on_attach = function(bufnr)
 		local gs = package.loaded.gitsigns
@@ -13,7 +9,7 @@ require("gitsigns").setup({
 		end
 
 		-- Navigation
-		nnoremap("]c", function()
+		vim.keymap.set("n", "]c", function()
 			if vim.wo.diff then
 				return "]c"
 			end
@@ -23,7 +19,7 @@ require("gitsigns").setup({
 			return "<Ignore>"
 		end, { expr = true })
 
-		nnoremap("[c", function()
+		vim.keymap.set("n", "[c", function()
 			if vim.wo.diff then
 				return "[c"
 			end
@@ -34,25 +30,25 @@ require("gitsigns").setup({
 		end, { expr = true })
 
 		-- Actions
-		nnoremap("<leader>hs", ":Gitsigns stage_hunk<CR>")
-		vnoremap("<leader>hs", ":Gitsigns stage_hunk<CR>")
-		nnoremap("<leader>hr", ":Gitsigns reset_hunk<CR>")
-		vnoremap("<leader>hr", ":Gitsigns reset_hunk<CR>")
-		nnoremap("<leader>hS", gs.stage_buffer)
-		nnoremap("<leader>hu", gs.undo_stage_hunk)
-		nnoremap("<leader>hR", gs.reset_buffer)
-		nnoremap("<leader>hp", gs.preview_hunk)
-		nnoremap("<leader>hb", function()
+		vim.keymap.set("n", "<leader>hs", ":Gitsigns stage_hunk<CR>")
+		vim.keymap.set("v", "<leader>hs", ":Gitsigns stage_hunk<CR>")
+		vim.keymap.set("n", "<leader>hr", ":Gitsigns reset_hunk<CR>")
+		vim.keymap.set("v", "<leader>hr", ":Gitsigns reset_hunk<CR>")
+		vim.keymap.set("n", "<leader>hS", gs.stage_buffer)
+		vim.keymap.set("n", "<leader>hu", gs.undo_stage_hunk)
+		vim.keymap.set("n", "<leader>hR", gs.reset_buffer)
+		vim.keymap.set("n", "<leader>hp", gs.preview_hunk)
+		vim.keymap.set("n", "<leader>hb", function()
 			gs.blame_line({ full = true })
 		end)
-		nnoremap("<leader>tb", gs.toggle_current_line_blame)
-		nnoremap("<leader>hd", gs.diffthis)
-		nnoremap("<leader>hD", function()
+		vim.keymap.set("n", "<leader>tb", gs.toggle_current_line_blame)
+		vim.keymap.set("n", "<leader>hd", gs.diffthis)
+		vim.keymap.set("n", "<leader>hD", function()
 			gs.diffthis("~")
 		end)
-		nnoremap("<leader>td", gs.toggle_deleted)
+		vim.keymap.set("n", "<leader>td", gs.toggle_deleted)
 
 		-- Text object
-		--map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>")
+		map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>")
 	end,
 })
