@@ -18,7 +18,7 @@ jobs:
       - name: Run ShellCheck (yadm)
         uses: ludeeus/action-shellcheck@master
         with:
-          scandir: ".config/yadm" 
+          scandir: ".config/yadm"
       - name: Run ShellCheck (polybar)
         uses: ludeeus/action-shellcheck@master
         with:
@@ -33,3 +33,14 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: 0.15.3
           args: --check .config/awesome .config/nvim/lua
+  yamllint:
+    name: 'Yamllint'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@master
+      - name: 'Yamllint'
+        uses: karancode/yamllint-github-action@master
+        with:
+          yamllint_file_or_dir: '.config/alacritty'
+          yamllint_strict: false
