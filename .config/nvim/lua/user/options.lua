@@ -36,7 +36,7 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
-vim.opt.completeopt = { "menu", "menuone", "noselect" }
+vim.opt.completeopt = 'menuone,noselect'
 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
@@ -44,7 +44,7 @@ vim.opt.splitbelow = true
 vim.opt.cursorline = true
 vim.opt.ttyfast = true
 
-vim.g.mapleader = ";"
+vim.g.mapleader = " "
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.g.loaded_netrwSettings = 1
