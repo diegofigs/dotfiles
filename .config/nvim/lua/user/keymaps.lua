@@ -1,3 +1,7 @@
+-- Keymaps for better default experience
+-- See `:help vim.keymap.set()`
+vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
+
 -- move line or visually selected block - alt+j/k
 vim.keymap.set("i", "<A-j>", "<Esc>:m .+1<CR>==gi")
 vim.keymap.set("i", "<A-k>", "<Esc>:m .-2<CR>==gi")
@@ -10,54 +14,24 @@ vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
 
--- Find files using Telescope command-line sugar.
-vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
-vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>")
-vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
-vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
-vim.keymap.set("n", "<leader>fk", "<cmd>Telescope keymaps<cr>")
+vim.keymap.set("n", "<leader>?", require("telescope.builtin").oldfiles, { desc = "[?] Find recently opened files" })
+vim.keymap.set("n", "<leader><space>", require("telescope.builtin").buffers, { desc = "[ ] Find existing buffers" })
+vim.keymap.set("n", "<leader>/", function()
+	-- You can pass additional configuration to telescope to change theme, layout, etc.
+	require("telescope.builtin").current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
+		winblend = 10,
+		previewer = false,
+	}))
+end, { desc = "[/] Fuzzily search in current buffer]" })
 
-local diagnostic = require("lspsaga.diagnostic")
-local sagaopts = { silent = true }
--- Lsp finder find the symbol definition implement reference
--- when you use action in finder like open vsplit then you can
--- use <C-t> to jump back
-vim.keymap.set("n", "gh", "<cmd>Lspsaga lsp_finder<CR>", sagaopts)
+vim.keymap.set("n", "<leader>sf", require("telescope.builtin").find_files, { desc = "[S]earch [F]iles" })
+vim.keymap.set("n", "<leader>sh", require("telescope.builtin").help_tags, { desc = "[S]earch [H]elp" })
+vim.keymap.set("n", "<leader>sw", require("telescope.builtin").grep_string, { desc = "[S]earch current [W]ord" })
+vim.keymap.set("n", "<leader>sg", require("telescope.builtin").live_grep, { desc = "[S]earch by [G]rep" })
+vim.keymap.set("n", "<leader>sd", require("telescope.builtin").diagnostics, { desc = "[S]earch [D]iagnostics" })
 
--- Code action
-vim.keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", sagaopts)
-vim.keymap.set("v", "<leader>ca", "<cmd>Lspsaga code_action<CR>", sagaopts)
-
--- Rename
-vim.keymap.set("n", "<leader>gr", "<cmd>Lspsaga rename<CR>", sagaopts)
-
--- Definition preview
-vim.keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", sagaopts)
-
--- Show line diagnostics
-vim.keymap.set("v", "<leader>cd", "<cmd>Lspsaga show_line_diagnostics<CR>", sagaopts)
-
--- Show cursor diagnostic
-vim.keymap.set("n", "<leader>cd", "<cmd>Lspsaga show_cursor_diagnostics<CR>", sagaopts)
-
--- Diagnsotic jump can use `<c-o>` to jump back
-vim.keymap.set("n", "[e", "<cmd>Lspsaga diagnostic_jump_prev<CR>", sagaopts)
-vim.keymap.set("n", "]e", "<cmd>Lspsaga diagnostic_jump_next<CR>", sagaopts)
-
--- Only jump to error
-vim.keymap.set("n", "[E", function()
-	diagnostic.goto_prev({ severity = vim.diagnostic.severity.ERROR })
-end, sagaopts)
-vim.keymap.set("n", "]E", function()
-	diagnostic.goto_next({ severity = vim.diagnostic.severity.ERROR })
-end, sagaopts)
-
--- Outline
-vim.keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", sagaopts)
-
--- Hover Doc
-vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", sagaopts)
-
--- Float terminal
-vim.keymap.set("n", "<A-d>", "<cmd>Lspsaga open_floaterm<CR>", sagaopts)
-vim.keymap.set("t", "<A-d>", [[<C-\><C-n><cmd>Lspsaga close_floaterm<CR>]], sagaopts)
+-- Diagnostic keymaps
+vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Prev [D]iagnostics" })
+vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Next [D]iagnostics" })
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
+vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist)
