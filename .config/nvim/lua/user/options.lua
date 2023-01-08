@@ -36,7 +36,7 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
-vim.opt.completeopt = 'menuone,noselect'
+vim.opt.completeopt = "menuone,noselect"
 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
