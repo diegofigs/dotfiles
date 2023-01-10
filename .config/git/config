@@ -1,7 +1,6 @@
 [user]
 	name = diegofigs
 	email = 12281609+diegofigs@users.noreply.github.com
-	signingKey = ~/.ssh/id_ed25519.pub
 [alias]
 	st = status
 	co = checkout
@@ -11,18 +10,17 @@
 	last = log -1 HEAD
 [push]
 	default = current
-[commit]
-	gpgSign = true
 [core]
 	pager = less --raw-control-chars
 [pull]
 	rebase = false
 [init]
 	defaultBranch = main
-[gpg]
-	format = ssh
 [gpg "ssh"]
 	allowedSignersFile = ~/.ssh/allowed_signers
 
-[includeIf "gitdir:~/work"]
+[includeIf "gitdir:~/work/"]
     path = ./config-work
+
+[includeIf "gitdir:~/projects/"]
+    path = ./config-personal
