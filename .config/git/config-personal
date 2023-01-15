@@ -1,6 +1,6 @@
 [user]
     signingKey = ~/.ssh/id_ed25519.pub
-[gpg]
-    format = ssh
 [commit]
     gpgSign = true
+[gpg]
+    format = ssh
