@@ -8,6 +8,7 @@
 	up = rebase
 	ci = commit
 	last = log -1 HEAD
+	sigs = log --show-signature
 [push]
 	default = current
 [core]
