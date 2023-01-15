@@ -19,6 +19,9 @@
 [gpg "ssh"]
 	allowedSignersFile = ~/.ssh/allowed_signers
 
+[include]
+    path = ./config-gpg
+
 [includeIf "gitdir:~/work/"]
     path = ./config-work
 
