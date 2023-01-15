@@ -1,4 +1,7 @@
 #! /usr/bin/zsh
+
+export GPG_TTY=$TTY
+
 # Profiling
 zmodload zsh/zprof
 
