@@ -17,6 +17,9 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 -- nvim tree toggle
 vim.keymap.set("n", "<leader>tt", ":NvimTreeToggle <CR>", { desc = "[T]ree [T]oggle" })
 
+-- suda
+vim.keymap.set("n", "<leader>W", ":SudaWrite <CR>", { desc = "Sudo [W]rite" })
+
 -- trouble
 vim.keymap.set("n", "<leader>xx", ":TroubleToggle<cr>", { silent = true, noremap = true })
 vim.keymap.set("n", "<leader>xw", ":TroubleToggle workspace_diagnostics<cr>", { silent = true, noremap = true })
