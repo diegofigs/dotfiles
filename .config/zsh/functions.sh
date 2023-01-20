@@ -26,8 +26,15 @@ pacbackup() {
 }
 
 pacrestore() {
-    yay -S --needed --noconfirm - < ~/.pkglist.txt
-    yay -S --needed --noconfirm --removemake --answerclean NotInstalled - < ~/.aurlist.txt
+    if [ $# -eq 0 ]; then
+        yay -S --needed --noconfirm - < ~/.pkglist.txt
+        yay -S --needed --noconfirm --removemake --answerclean NotInstalled - < ~/.aurlist.txt
+    else
+        if [ "$1" = "vm" ]; then
+            yay -S --needed --noconfirm - < ~/.vm.pkglist.txt
+            yay -S --needed --noconfirm --removemake --answerclean NotInstalled - < ~/.aurlist.txt
+        fi;
+    fi;
 }
 
 pacclean() {
