@@ -12,6 +12,8 @@ bat
 binutils
 btop
 btrfs-progs
+ddrescue
+discord
 docker
 dunst
 efibootmgr
@@ -28,6 +30,7 @@ gcc
 geany
 gettext
 glow
+gparted
 grep
 groff
 gst-plugin-pipewire
@@ -45,6 +48,7 @@ make
 man-db
 mpc
 mpd
+mtools
 neofetch
 neovim
 noto-fonts-emoji
@@ -62,6 +66,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 polybar
+procps-ng
 procs
 python-chardet
 python-setuptools
@@ -70,11 +75,13 @@ ripgrep
 rofi
 rofimoji
 sed
+signal-desktop
 starship
 stylua
 sudo
 telegram-desktop
 terminus-font
+terraform
 tk
 tmux
 ttf-firacode-nerd
@@ -94,6 +101,8 @@ xorg-xinit
 xorg-xwayland
 xsel
 yadm
+yubikey-manager
+yubioath-desktop
 zram-generator
 zsh
 zsh-autosuggestions
