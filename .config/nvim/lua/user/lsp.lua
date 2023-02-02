@@ -50,17 +50,24 @@ local servers = {
 	cssmodules_ls = {},
 	solidity = {},
 	bashls = {},
+	terraformls = {},
 	rust_analyzer = {},
 	sumneko_lua = {
 		Lua = {
-			workspace = { checkThirdParty = false },
+			runtime = {
+				version = "LuaJIT",
+			},
+			workspace = { checkThirdParty = false, library = vim.api.nvim_get_runtime_file("", true) },
 			telemetry = { enable = false },
+			diagnostics = { globals = { "vim", "awesome" } },
 		},
 	},
 }
 
 -- Setup neovim lua configuration
 require("neodev").setup()
+
+require("fidget").setup()
 
 -- nvim-cmp supports additional completion capabilities, so broadcast that to servers
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -70,13 +77,11 @@ capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 require("mason").setup()
 
 -- Ensure the servers above are installed
-local mason_lspconfig = require("mason-lspconfig")
-
-mason_lspconfig.setup({
+require("mason-lspconfig").setup({
 	ensure_installed = vim.tbl_keys(servers),
 })
 
-mason_lspconfig.setup_handlers({
+require("mason-lspconfig").setup_handlers({
 	function(server_name)
 		require("lspconfig")[server_name].setup({
 			capabilities = capabilities,
