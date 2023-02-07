@@ -77,7 +77,7 @@ local themes = {
 	"default", -- 11
 }
 
-local chosen_theme = themes[9]
+local chosen_theme = themes[11]
 local modkey = "Mod4"
 local altkey = "Mod1"
 local terminal = "alacritty"
