@@ -124,6 +124,8 @@ else
     . /opt/asdf-vm/asdf.sh
 fi
 
+fpath=($ZDOTDIR/completions $fpath)
+
 # Initialize cargo
 . $CARGO_HOME/env
 
