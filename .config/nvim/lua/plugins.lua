@@ -112,6 +112,12 @@ require("packer").startup(function(use)
 			require("config.indent_blankline")
 		end,
 	})
+	use({
+		"norcalli/nvim-colorizer.lua",
+		config = function()
+			require("colorizer").setup()
+		end,
+	})
 	use({ "onsails/lspkind.nvim" })
 	use({
 		"folke/which-key.nvim",
