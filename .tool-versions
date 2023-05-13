@@ -2,3 +2,5 @@ nodejs lts
 python 3.10.6 2.7.18
 lua 5.3.0
 pnpm 8.3.0-0
+ruby 3.2.0
+java openjdk-18
