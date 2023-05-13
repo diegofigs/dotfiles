@@ -16,7 +16,8 @@ require("packer").startup(function(use)
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
 
-	use({ -- LSP Configuration & Plugins
+	use({
+		-- LSP Configuration & Plugins
 		"neovim/nvim-lspconfig",
 		requires = {
 			-- Automatically install LSPs to stdpath for neovim
@@ -30,7 +31,8 @@ require("packer").startup(function(use)
 			"folke/neodev.nvim",
 		},
 	})
-	use({ -- Autocompletion
+	use({
+		-- Autocompletion
 		"hrsh7th/nvim-cmp",
 		requires = {
 			"hrsh7th/cmp-nvim-lsp",
@@ -43,7 +45,8 @@ require("packer").startup(function(use)
 		},
 	})
 
-	use({ -- Highlight, edit, and navigate code
+	use({
+		-- Highlight, edit, and navigate code
 		"nvim-treesitter/nvim-treesitter",
 		run = function()
 			local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
@@ -87,10 +90,12 @@ require("packer").startup(function(use)
 		end,
 	})
 	use({
-		"kyazdani42/nvim-tree.lua",
-		requires = { "kyazdani42/nvim-web-devicons" },
+		"nvim-tree/nvim-tree.lua",
+		requires = {
+			"nvim-tree/nvim-web-devicons", -- optional
+		},
 		config = function()
-			require("nvim-tree").setup()
+			require("nvim-tree").setup({})
 		end,
 	})
 	use({

@@ -50,7 +50,6 @@ local servers = {
 	cssmodules_ls = {},
 	tailwindcss = {},
 	astro = {},
-	solidity = {},
 	bashls = {},
 	terraformls = {},
 	rust_analyzer = {},
@@ -93,11 +92,12 @@ require("mason-lspconfig").setup_handlers({
 	end,
 })
 
+require("lspconfig").solidity_ls_nomicfoundation.setup({})
+
 local null_ls = require("null-ls")
 null_ls.setup({
 	sources = {
 		null_ls.builtins.diagnostics.zsh,
-		null_ls.builtins.diagnostics.solhint,
 		null_ls.builtins.diagnostics.luacheck.with({
 			extra_args = { "--globals", "vim,awesome" },
 		}),
