@@ -12,4 +12,6 @@ export TERMINFO_DIRS="$XDG_DATA_HOME"/terminfo:/usr/share/terminfo
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 
+export ANDROID_HOME=~/Android/Sdk
+
 export PF_INFO="ascii title os wm shell editor uptime pkgs memory palette"
