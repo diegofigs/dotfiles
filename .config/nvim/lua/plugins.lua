@@ -100,7 +100,7 @@ require("packer").startup(function(use)
 	})
 	use({
 		"folke/trouble.nvim",
-		requires = "kyazdani42/nvim-web-devicons",
+		requires = "nvim-tree/nvim-web-devicons",
 		config = function()
 			require("trouble").setup({})
 		end,
@@ -152,6 +152,15 @@ require("packer").startup(function(use)
 	use({
 		"catppuccin/nvim",
 		as = "catppuccin",
+		config = function()
+			require("catppuccin").setup({
+				flavour = "macchiato", -- latte, frappe, macchiato, mocha
+				integrations = {
+					fidget = true,
+					which_key = true,
+				},
+			})
+		end,
 	})
 	use({ "lambdalisue/suda.vim" })
 	use({ "lewis6991/impatient.nvim" })

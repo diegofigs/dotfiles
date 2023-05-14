@@ -23,9 +23,9 @@ end
 require("lualine").setup({
 	options = {
 		icons_enabled = true,
-		theme = "auto",
-		component_separators = { left = "", right = "" },
-		section_separators = { left = "", right = "" },
+		theme = "catppuccin",
+		component_separators = "|",
+		section_separators = { left = "", right = "" },
 		disabled_filetypes = {
 			statusline = {},
 			winbar = {},
@@ -40,17 +40,22 @@ require("lualine").setup({
 		},
 	},
 	sections = {
-		lualine_a = { "mode" },
+		lualine_a = {
+			{ "mode", separator = { left = "" }, right_padding = 2 },
+		},
 		lualine_b = {
 			{
 				"filename",
 				file_status = true,
-				symbols = { modified = " ", readonly = " " },
+				symbols = { modified = "", readonly = "" },
+			},
+			{
+				"branch",
+				icon = "",
 			},
 		},
 		lualine_c = {
-			{ "branch", icon = "" },
-			{ "diff" },
+			"fileformat",
 			{
 				"diagnostics",
 				sources = { "nvim_diagnostic" },
@@ -59,24 +64,23 @@ require("lualine").setup({
 			{
 				lsp_server_name,
 				icon = " LSP:",
-				padding = 15,
 				color = { fg = "#7195e1", gui = "bold" },
 			},
 		},
-		lualine_x = { "encoding", "fileformat", "filetype" },
-		lualine_y = { "progress" },
-		lualine_z = { "location" },
+		lualine_x = {},
+		lualine_y = { "filetype", "progress" },
+		lualine_z = {
+			{ "location", separator = { right = "" }, left_padding = 2 },
+		},
 	},
 	inactive_sections = {
-		lualine_a = {},
+		lualine_a = { "filename" },
 		lualine_b = {},
-		lualine_c = { "filename" },
-		lualine_x = { "location" },
+		lualine_c = {},
+		lualine_x = {},
 		lualine_y = {},
-		lualine_z = {},
+		lualine_z = { "location" },
 	},
 	tabline = {},
-	winbar = {},
-	inactive_winbar = {},
 	extensions = {},
 })
