@@ -92,7 +92,10 @@ require("mason-lspconfig").setup_handlers({
 	end,
 })
 
-require("lspconfig").solidity_ls_nomicfoundation.setup({})
+require("lspconfig").solidity_ls_nomicfoundation.setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
 
 local null_ls = require("null-ls")
 null_ls.setup({
