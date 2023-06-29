@@ -46,9 +46,8 @@ end
 local servers = {
 	tsserver = {},
 	eslint = {},
-	cssls = {},
-	cssmodules_ls = {},
 	tailwindcss = {},
+	cssls = {},
 	astro = {},
 	bashls = {},
 	terraformls = {},
