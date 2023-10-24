@@ -32,7 +32,6 @@ esac
 
 if [ "$(uname -s)" = "Darwin" ]; then
     export ANDROID_HOME=~/Library/Android/Sdk
-    export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
 
     prefix=$(brew --prefix)
     export BREW_PREFIX="$prefix"
@@ -40,7 +39,9 @@ if [ "$(uname -s)" = "Darwin" ]; then
     export PATH="$BREW_PREFIX/opt/gnu-tar/libexec/gnubin:$PATH"
     export PATH="$BREW_PREFIX/opt/grep/libexec/gnubin:$PATH"
     export PATH="$BREW_PREFIX/opt/curl/bin:$PATH"
-    export PATH="$HOME/.local/bin:$PATH"
+
+    USER_BASE_BIN=$(python3 -m site --user-base)/bin
+    export PATH="$USER_BASE_BIN:$PATH"
 else
     export ANDROID_HOME=~/Android/Sdk
 fi
