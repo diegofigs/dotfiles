@@ -9,16 +9,6 @@ export GPG_TTY=$TTY
 # Profiling
 zmodload zsh/zprof
 
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#     source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-# fi
-
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
-
 # Set up history file
 export HISTFILE="$XDG_STATE_HOME/zsh/history"
 export HISTSIZE=10000;
@@ -27,9 +17,8 @@ export SAVEHIST=10000;
 setopt appendhistory
 
 # Load the shell dotfiles, and then some:
-# * ~/.path can be used to extend `$PATH`.
-# * ~/.extra can be used for other settings you don’t want to commit.
-for file in "$ZDOTDIR"/{path,exports,aliases,functions,extra}.sh; do
+# * ~/zsh/path.sh can be used to extend `$PATH`.
+for file in "$ZDOTDIR"/{aliases,exports,functions,path}.sh; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
@@ -107,27 +96,18 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # persistent rehash
-# zstyle ':completion:*' rehash true
+zstyle ':completion:*' rehash true
 
 if [ "$(uname -s)" = "Darwin" ]; then
-    # Initialize asdf
-    . $BREW_PREFIX/opt/asdf/libexec/asdf.sh
-
     FPATH=$BREW_PREFIX/share/zsh/site-functions:$FPATH
     FPATH=$BREW_PREFIX/share/zsh-completions:$FPATH
 else
     # Command completion
     zstyle ':completion:*:pacman:*' force-list always
     zstyle ':completion:*:*:pacman:*' menu yes select
-
-    # Initialize asdf
-    . /opt/asdf-vm/asdf.sh
 fi
 
 fpath=($ZDOTDIR/completions $fpath)
-
-# Initialize cargo
-. $CARGO_HOME/env
 
 autoload -Uz compinit && compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 source "$ZDOTDIR"/prompt.zsh
