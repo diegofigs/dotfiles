@@ -48,6 +48,7 @@ local servers = {
 	eslint = {},
 	tailwindcss = {},
 	cssls = {},
+	cssmodules_ls = {},
 	astro = {},
 	bashls = {},
 	terraformls = {},
@@ -131,8 +132,6 @@ local servers = {
 
 -- Setup neovim lua configuration
 require("neodev").setup()
-
-require("fidget").setup()
 
 -- nvim-cmp supports additional completion capabilities, so broadcast that to servers
 local capabilities = vim.lsp.protocol.make_client_capabilities()
