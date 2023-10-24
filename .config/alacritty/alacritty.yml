@@ -3,5 +3,3 @@ import:
   - ~/.config/alacritty/theme.yml
 font:
   size: 16
-window:
-  decorations: none
