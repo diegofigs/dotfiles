@@ -23,14 +23,23 @@ require("packer").startup(function(use)
 			-- Automatically install LSPs to stdpath for neovim
 			"williamboman/mason.nvim",
 			"williamboman/mason-lspconfig.nvim",
-
-			-- Useful status updates for LSP
-			"j-hui/fidget.nvim",
+			"simrat39/rust-tools.nvim",
 
 			-- Additional lua configuration, makes nvim stuff amazing
 			"folke/neodev.nvim",
 		},
 	})
+
+	use({
+		"j-hui/fidget.nvim",
+		tag = "legacy",
+		config = function()
+			require("fidget").setup({
+				-- options
+			})
+		end,
+	})
+
 	use({
 		-- Autocompletion
 		"hrsh7th/nvim-cmp",
@@ -85,6 +94,8 @@ require("packer").startup(function(use)
 	})
 	use({
 		"akinsho/bufferline.nvim",
+		tag = "*",
+		requires = "nvim-tree/nvim-web-devicons",
 		config = function()
 			require("config.bufferline")
 		end,
@@ -114,7 +125,7 @@ require("packer").startup(function(use)
 	use({
 		"lukas-reineke/indent-blankline.nvim",
 		config = function()
-			require("config.indent_blankline")
+			require("ibl").setup()
 		end,
 	})
 	use({

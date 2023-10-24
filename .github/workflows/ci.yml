@@ -1,9 +1,11 @@
+name: CI
+
 on:
   push:
     branches:
       - main
+  pull_request:
 
-name: "CI"
 jobs:
   shellcheck:
     name: Shellcheck
@@ -23,6 +25,7 @@ jobs:
         uses: ludeeus/action-shellcheck@master
         with:
           scandir: ".config/polybar/scripts"
+
   stylua:
     name: StyLua
     runs-on: ubuntu-latest
@@ -33,12 +36,27 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: 0.15.3
           args: --check .config/awesome .config/nvim/lua
+
   yamllint:
-    name: 'Yamllint'
+    name: Yamllint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v3
       - uses: karancode/yamllint-github-action@master
         with:
-          yamllint_file_or_dir: '.config/alacritty'
-          yamllint_config_filepath: '.config/alacritty/.yamllint.yml'
+          yamllint_file_or_dir: ".config/alacritty"
+          yamllint_config_filepath: ".config/alacritty/.yamllint.yml"
+
+  nvim:
+    name: Neovim
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: rhysd/action-setup-vim@v1
+        with:
+          neovim: true
+          version: v0.9.4
+      - run: git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+      - run: mkdir $HOME/.config/nvim
+      - run: cp -r ./.config/nvim $HOME/.config/nvim
+      - run: nvim --headless --startuptime vim.log -c qa

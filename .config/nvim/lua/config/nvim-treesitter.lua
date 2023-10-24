@@ -4,7 +4,6 @@ require("nvim-treesitter.configs").setup({
 		"python",
 		"rust",
 		"typescript",
-		"help",
 		"vim",
 	},
 	auto_install = true,
