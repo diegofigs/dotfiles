@@ -1,4 +1,7 @@
 #! /usr/bin/bash
+
+gpgconf --launch gpg-agent
+
 # Initialize cargo
 . $CARGO_HOME/env
 

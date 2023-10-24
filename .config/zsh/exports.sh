@@ -1,4 +1,11 @@
 #! /usr/bin/env bash
+
+unset SSH_AGENT_PID
+ssh_auth_sock=$(gpgconf --list-dirs agent-ssh-socket)
+export SSH_AUTH_SOCK=$ssh_auth_sock
+
+export GPG_TTY=$TTY
+
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
