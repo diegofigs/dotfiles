@@ -24,20 +24,18 @@ require("packer").startup(function(use)
 			"williamboman/mason.nvim",
 			"williamboman/mason-lspconfig.nvim",
 			"simrat39/rust-tools.nvim",
-
+			{
+				"j-hui/fidget.nvim",
+				tag = "legacy",
+				config = function()
+					require("fidget").setup({
+						-- options
+					})
+				end,
+			},
 			-- Additional lua configuration, makes nvim stuff amazing
 			"folke/neodev.nvim",
 		},
-	})
-
-	use({
-		"j-hui/fidget.nvim",
-		tag = "legacy",
-		config = function()
-			require("fidget").setup({
-				-- options
-			})
-		end,
 	})
 
 	use({
@@ -64,6 +62,9 @@ require("packer").startup(function(use)
 		config = function()
 			require("config.nvim-treesitter")
 		end,
+		requires = {
+			"nvim-treesitter/nvim-treesitter-textobjects",
+		},
 	})
 
 	-- Fuzzy Finder (files, lsp, etc)
