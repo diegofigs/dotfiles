@@ -17,7 +17,7 @@ discord
 docker
 dunst
 efibootmgr
-exa
+eza
 fakeroot
 fd
 feh
@@ -32,12 +32,15 @@ gettext
 github-cli
 glow
 gparted
+greetd
+greetd-tuigreet
 grep
 groff
 gst-plugin-pipewire
 gzip
 htop
 iwd
+libfido2
 libnotify
 libpulse
 libtool
@@ -52,6 +55,7 @@ mpd
 mtools
 neofetch
 neovim
+nmap
 noto-fonts-emoji
 nvidia
 nvidia-settings
@@ -66,7 +70,9 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+pkgconf
 polybar
+poppler
 procps-ng
 procs
 python-chardet
@@ -90,6 +96,7 @@ ttf-font-awesome
 ttf-liberation
 unclutter
 unzip
+usbutils
 wget
 which
 wireless_tools
@@ -103,7 +110,9 @@ xorg-xwayland
 xsel
 yadm
 yubikey-manager
+yubikey-manager-qt
 yubioath-desktop
+zip
 zram-generator
 zsh
 zsh-autosuggestions
