@@ -24,10 +24,10 @@ vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", { desc = "Move line(s) up" })
 vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "Move line(s) down" })
 
 -- move between panes to left/bottom/top/right
-vim.keymap.set("n", "<C-h>", "<C-w>h")
-vim.keymap.set("n", "<C-j>", "<C-w>j")
-vim.keymap.set("n", "<C-k>", "<C-w>k")
-vim.keymap.set("n", "<C-l>", "<C-w>l")
+vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left pane" })
+vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to bottom pane" })
+vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to top pane" })
+vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right pane" })
 
 -- nvim tree toggle
 vim.keymap.set("n", "<leader>tt", ":NvimTreeToggle <CR>", { desc = "[T]ree [T]oggle" })
@@ -36,12 +36,42 @@ vim.keymap.set("n", "<leader>tt", ":NvimTreeToggle <CR>", { desc = "[T]ree [T]og
 vim.keymap.set("n", "<leader>W", ":SudaWrite <CR>", { desc = "Sudo [W]rite" })
 
 -- trouble
-vim.keymap.set("n", "<leader>xx", ":TroubleToggle<cr>", { silent = true, noremap = true })
-vim.keymap.set("n", "<leader>xw", ":TroubleToggle workspace_diagnostics<cr>", { silent = true, noremap = true })
-vim.keymap.set("n", "<leader>xd", ":TroubleToggle document_diagnostics<cr>", { silent = true, noremap = true })
-vim.keymap.set("n", "<leader>xl", ":TroubleToggle loclist<cr>", { silent = true, noremap = true })
-vim.keymap.set("n", "<leader>xq", ":TroubleToggle quickfix<cr>", { silent = true, noremap = true })
-vim.keymap.set("n", "gR", ":TroubleToggle lsp_references<cr>", { silent = true, noremap = true })
+vim.keymap.set(
+	"n",
+	"<leader>xx",
+	":TroubleToggle<cr>",
+	{ silent = true, noremap = true, desc = "[X][X]Trouble Toggle" }
+)
+vim.keymap.set(
+	"n",
+	"<leader>xw",
+	":TroubleToggle workspace_diagnostics<cr>",
+	{ silent = true, noremap = true, desc = "[X]Trouble [W]orkspace" }
+)
+vim.keymap.set(
+	"n",
+	"<leader>xd",
+	":TroubleToggle document_diagnostics<cr>",
+	{ silent = true, noremap = true, desc = "[X]Trouble [D]iagnostics" }
+)
+vim.keymap.set(
+	"n",
+	"<leader>xl",
+	":TroubleToggle loclist<cr>",
+	{ silent = true, noremap = true, desc = "[X]Trouble [L]oclist" }
+)
+vim.keymap.set(
+	"n",
+	"<leader>xq",
+	":TroubleToggle quickfix<cr>",
+	{ silent = true, noremap = true, desc = "[X]Trouble [Q]uickfix" }
+)
+vim.keymap.set(
+	"n",
+	"gR",
+	":TroubleToggle lsp_references<cr>",
+	{ silent = true, noremap = true, desc = "Trouble [G]et [R]eferences" }
+)
 
 -- Telescope
 vim.keymap.set("n", "<leader>?", require("telescope.builtin").oldfiles, { desc = "[?] Find recently opened files" })

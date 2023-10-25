@@ -12,6 +12,8 @@ end
 
 local packer_bootstrap = ensure_packer()
 
+pcall(require, "impatient")
+
 require("packer").startup(function(use)
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
