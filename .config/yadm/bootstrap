@@ -22,19 +22,13 @@ if [ "$system_type" = "Linux" ]; then
         rm -rf yay-bin
     fi
 
-	yay -S --needed --noconfirm --removemake - < ~/.pkglist.txt
-	yay -S --needed --noconfirm --removemake - < ~/.aurlist.txt
+    yay -S --needed --noconfirm --removemake - < ~/.pkglist.txt
+    yay -S --needed --noconfirm --removemake - < ~/.aurlist.txt
     yay -Yc
 fi
 
-if command -v asdf &> /dev/null; then
-    asdf plugin add nodejs
-    asdf plugin add python
-    asdf plugin add lua
-    asdf install nodejs
-    asdf install python 3.10.6
-    asdf install python 2.7.18
-    asdf install lua 5.1
+if command -v rtx &> /dev/null; then
+  rtx install
 fi
 
 if ! command -v rustc &> /dev/null; then
