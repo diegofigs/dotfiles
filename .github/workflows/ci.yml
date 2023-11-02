@@ -39,38 +39,3 @@ jobs:
           yamllint_file_or_dir: ".config/alacritty"
           yamllint_config_filepath: ".config/alacritty/.yamllint.yml"
 
-  bootstrap:
-    name: Bootstrap
-    runs-on: ubuntu-latest
-    container:
-      image: archlinux:latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Setup Arch environment
-        run: |
-          pacman -Syu --noconfirm
-          pacman -S --noconfirm git base-devel sudo openssh curl yadm
-
-      - name: Create user
-        run: |
-          useradd -m actions-runner
-          echo "actions-runner ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
-
-      - name: Move dotfiles to home directory
-        run: |
-          mkdir -p /home/actions-runner
-          cp -r ./* /home/actions-runner/
-          cp -r ./.* /home/actions-runner/
-
-      - name: Install yay
-        run: |
-          su - actions-runner -c "\
-            git clone https://aur.archlinux.org/yay-bin.git && \
-            cd yay-bin && \
-            makepkg -si --noconfirm"
-
-      - run: chmod +x /home/actions-runner/.config/yadm/bootstrap
-      - name: Run bootstrap script
-        run: su - actions-runner -c "yadm bootstrap"
