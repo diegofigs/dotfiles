@@ -23,7 +23,7 @@ if [ "$system_type" = "Linux" ]; then
     fi
 
     sudo pacman -S --needed --noconfirm - < ~/.config/pkglist.txt
-    yay -S --needed --noconfirm --removemake --answerdiff=None - < ~/.config/aurlist.txt
+    yay --needed --noconfirm --removemake --noprovides --answerdiff None --answerclean None --mflags -S < ~/.config/aurlist.txt
     yay -Yc
 fi
 
