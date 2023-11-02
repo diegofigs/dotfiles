@@ -22,24 +22,27 @@ if [ "$system_type" = "Linux" ]; then
         rm -rf yay-bin
     fi
 
-    yay -S --needed --noconfirm --removemake - < ~/.pkglist.txt
-    yay -S --needed --noconfirm --removemake - < ~/.aurlist.txt
+    sudo pacman -S --needed --noconfirm - < ~/.config/pkglist.txt
+    yay -S --needed --noconfirm --removemake --answerdiff=None - < ~/.config/aurlist.txt
     yay -Yc
 fi
 
 if command -v rtx &> /dev/null; then
-  rtx install
+    rtx install
 fi
 
 if ! command -v rustc &> /dev/null; then
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 fi
 
 if ! command -v solana &> /dev/null; then
     sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
 fi
 
-if ! command -v rustup &> /dev/null; then
+if command -v cargo && ! command -v avm &> /dev/null; then
     cargo install --git https://github.com/coral-xyz/anchor avm --locked --force
+fi
+
+if command -v avm &> /dev/null; then
     avm install latest
 fi
