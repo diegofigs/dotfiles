@@ -1,0 +1,4 @@
+import = ["/Users/diegofigs/.config/alacritty/extra.toml", "/Users/diegofigs/.config/alacritty/theme.toml"]
+
+[font]
+size = 16

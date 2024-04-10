@@ -1,5 +1,0 @@
-import:
-  - ~/.config/alacritty/extra.yml
-  - ~/.config/alacritty/theme.yml
-font:
-  size: 16
