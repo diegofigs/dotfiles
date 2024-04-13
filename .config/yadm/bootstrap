@@ -5,44 +5,56 @@ cd "$HOME" || return
 system_type=$(uname -s)
 
 if [ "$system_type" = "Darwin" ]; then
-    if ! command -v brew &> /dev/null;
-    then
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    fi
+	if ! command -v brew &>/dev/null; then
+		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	fi
 
-    brew bundle
+	brew bundle
 fi
 
 if [ "$system_type" = "Linux" ]; then
-    if ! command -v yay &> /dev/null;
-    then
-        sudo pacman -S --needed git base-devel
-        git clone https://aur.archlinux.org/yay-bin.git
-        (cd yay-bin && makepkg -si --noconfirm)
-        rm -rf yay-bin
-    fi
+	if ! command -v yay &>/dev/null; then
+		sudo pacman -S --needed git base-devel
+		git clone https://aur.archlinux.org/yay-bin.git
+		(cd yay-bin && makepkg -si --noconfirm)
+		rm -rf yay-bin
+	fi
 
-    sudo pacman -S --needed --noconfirm - < ~/.config/pkglist.txt
-    yay -S --needed --noconfirm --removemake --answerdiff=None - < ~/.config/aurlist.txt
-    yay -Yc
+	sudo pacman -S --needed --noconfirm - <~/.config/pkglist.txt
+	yay -S --needed --noconfirm --removemake --answerdiff=None - <~/.config/aurlist.txt
+	yay -Yc
 fi
 
-if command -v rtx &> /dev/null; then
-    rtx install
+if command -v nvim &>/dev/null && ! [ -d ~/.config/nvim ]; then
+	# required
+	mv ~/.config/nvim{,.bak}
+
+	# optional but recommended
+	mv ~/.local/share/nvim{,.bak}
+	mv ~/.local/state/nvim{,.bak}
+	mv ~/.cache/nvim{,.bak}
+
+	git clone https://github.com/LazyVim/starter ~/.config/nvim
+
+	rm -rf ~/.config/nvim/.git
 fi
 
-if ! command -v rustc &> /dev/null; then
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+# if command -v rtx &>/dev/null; then
+# 	rtx install
+# fi
+
+if ! command -v rustc &>/dev/null; then
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 fi
 
-if ! command -v solana &> /dev/null; then
-    sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
+if ! command -v solana &>/dev/null; then
+	sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
 fi
 
-if command -v cargo && ! command -v avm &> /dev/null; then
-    cargo install --git https://github.com/coral-xyz/anchor avm --locked --force
+if command -v cargo && ! command -v avm &>/dev/null; then
+	cargo install --git https://github.com/coral-xyz/anchor avm --locked --force
 fi
 
-if command -v avm &> /dev/null; then
-    avm install latest
+if command -v avm &>/dev/null; then
+	avm install latest
 fi
