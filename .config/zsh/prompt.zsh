@@ -16,9 +16,12 @@ else
     # source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 fi
 
-# Activate rtx
-eval "$(rtx activate zsh)"
+# The next line enables shell command completion for gcloud.
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 
-# source $ZDOTDIR/.p10k.zsh
+# Activate language manager
+eval "$(mise activate zsh)"
 
+# Activate shell prompt
 eval "$(starship init zsh)"
+# source $ZDOTDIR/.p10k.zsh

@@ -1,5 +1,4 @@
 #! /usr/bin/zsh
-
 # Profiling
 zmodload zsh/zprof
 
