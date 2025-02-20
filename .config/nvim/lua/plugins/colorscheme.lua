@@ -1,6 +1,8 @@
 return {
-  "catppuccin",
-  opts = {
-    transparent_background = true,
+  {
+    "catppuccin",
+    opts = {
+      transparent_background = true,
+    },
   },
 }
