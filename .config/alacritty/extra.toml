@@ -1,5 +1,1 @@
-[font.normal]
-family = "Hack Nerd Font"
-
-[window]
-opacity = 0.8
+extra.toml##os.Linux
