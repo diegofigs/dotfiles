@@ -31,3 +31,6 @@ if [ "$(uname -s)" = "Darwin" ]; then
 else
 	export ANDROID_HOME=~/Android/Sdk
 fi
+
+export LUA_PATH='/Users/diegofigs/.local/share/mise/downloads/lua/5.1/lua-5.1/luarocks-3.11.1/src/?.lua;./?.lua;/usr/local/share/lua/5.1/?.lua;/usr/local/share/lua/5.1/?/init.lua;/usr/local/lib/lua/5.1/?.lua;/usr/local/lib/lua/5.1/?/init.lua;;/Users/diegofigs/.luarocks/share/lua/5.1/?.lua;/Users/diegofigs/.luarocks/share/lua/5.1/?/init.lua;/Users/diegofigs/.local/share/mise/installs/lua/5.1/luarocks/share/lua/5.1/?.lua;/Users/diegofigs/.local/share/mise/installs/lua/5.1/luarocks/share/lua/5.1/?/init.lua'
+export LUA_CPATH='./?.so;/usr/local/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/Users/diegofigs/.luarocks/lib/lua/5.1/?.so;/Users/diegofigs/.local/share/mise/installs/lua/5.1/luarocks/lib/lua/5.1/?.so'
