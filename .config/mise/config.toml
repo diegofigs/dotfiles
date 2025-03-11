@@ -1,10 +1,10 @@
 [tools]
 node = "lts"
-pnpm = "8"
 python = "3.10.6"
-lua = "5.4"
+lua = "5.1"
 ruby = "3.2.0"
 java = "openjdk-18"
+pnpm = "9.15.2"
 
 [settings]
 experimental = true
