@@ -20,18 +20,6 @@ local function get_diagnostic_label(props)
 end
 
 return {
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    opts = {
-      filesystem = {
-        filtered_items = {
-          hide_dotfiles = false,
-          hide_gitignored = false,
-        },
-      },
-    },
-  },
-
   -- messages, cmdline and the popupmenu
   {
     "folke/noice.nvim",
@@ -127,8 +115,8 @@ return {
       require("incline").setup({
         highlight = {
           groups = {
-            InclineNormal = { guifg = colors.base, guibg = colors.red },
-            InclineNormalNC = { guifg = colors.base, guibg = colors.maroon },
+            InclineNormal = { guifg = colors.text, guibg = colors.surface1 },
+            InclineNormalNC = { guifg = colors.text, guibg = colors.surface0 },
           },
         },
         window = { margin = { vertical = 0, horizontal = 1 } },
