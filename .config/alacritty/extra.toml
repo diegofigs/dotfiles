@@ -1,1 +1,2 @@
-extra.toml##os.Linux
+[font.normal]
+family = "MesloLGS Nerd Font"
