@@ -104,3 +104,8 @@ fpath=($ZDOTDIR/completions $fpath)
 
 autoload -Uz compinit && compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 source "$ZDOTDIR"/prompt.zsh
+
+
+if [[ "$TERM_PROGRAM" == "ghostty" ]]; then
+    export TERM=xterm-256color
+fi

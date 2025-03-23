@@ -6,14 +6,15 @@ export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 if [ "$(uname -s)" = "Darwin" ]; then
-	prefix=$(brew --prefix)
-	export BREW_PREFIX="$prefix"
+  prefix=$(brew --prefix)
+  export BREW_PREFIX="$prefix"
 
-	# since these are system binaries, prepend to ensure they are used
-	# over system provided ones
-	export PATH="$BREW_PREFIX/opt/gnu-tar/libexec/gnubin:$PATH"
-	export PATH="$BREW_PREFIX/opt/grep/libexec/gnubin:$PATH"
-	export PATH="$BREW_PREFIX/opt/curl/bin:$PATH"
+  # since these are system binaries, prepend to ensure they are used
+  # over system provided ones
+  export PATH="$BREW_PREFIX/opt/gnu-tar/libexec/gnubin:$PATH"
+  export PATH="$BREW_PREFIX/opt/gnu-time/libexec/gnubin:$PATH"
+  export PATH="$BREW_PREFIX/opt/grep/libexec/gnubin:$PATH"
+  export PATH="$BREW_PREFIX/opt/curl/bin:$PATH"
 fi
 
 export PATH="$PATH:$ANDROID_HOME/emulator"
