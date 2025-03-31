@@ -13,10 +13,7 @@ alias la='ls -la'
 alias ll='la'
 alias lf='ls -lF'
 
-if [ "$(uname -s)" = "Darwin" ]; then
-  alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
-  alias grep='grep --color'
-else
+if [ "$(uname -s)" != "Darwin" ]; then
   alias spm='sudo pacman'
   alias add='yay -Sy'
   alias update='yay -Syu'

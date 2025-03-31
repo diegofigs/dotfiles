@@ -91,10 +91,7 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 # persistent rehash
 zstyle ':completion:*' rehash true
 
-if [ "$(uname -s)" = "Darwin" ]; then
-    FPATH=$BREW_PREFIX/share/zsh/site-functions:$FPATH
-    FPATH=$BREW_PREFIX/share/zsh-completions:$FPATH
-else
+if [ "$(uname -s)" != "Darwin" ]; then
     # Command completion
     zstyle ':completion:*:pacman:*' force-list always
     zstyle ':completion:*:*:pacman:*' menu yes select
@@ -104,8 +101,3 @@ fpath=($ZDOTDIR/completions $fpath)
 
 autoload -Uz compinit && compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 source "$ZDOTDIR"/prompt.zsh
-
-
-if [[ "$TERM_PROGRAM" == "ghostty" ]]; then
-    export TERM=xterm-256color
-fi

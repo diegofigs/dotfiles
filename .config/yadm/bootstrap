@@ -5,12 +5,6 @@ cd "$HOME" || return
 system_type=$(uname -s)
 
 if [ "$system_type" = "Darwin" ]; then
-  # if ! command -v brew &>/dev/null; then
-  #   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  # fi
-  #
-  # brew bundle
-
   if ! command -v nix &>/dev/null; then
     curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix |
       sh -s -- install
@@ -39,6 +33,9 @@ if [ "$system_type" = "Linux" ]; then
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
   fi
 
+  if ! command -v foundryup &>/dev/null; then
+    curl -L https://foundry.paradigm.xyz | bash
+  fi
 fi
 
 if command -v mise &>/dev/null; then
@@ -61,8 +58,4 @@ fi
 
 if ! command -v solana &>/dev/null; then
   sh -c "$(curl -sSfL https://release.anza.xyz/stable/install)"
-fi
-
-if ! command -v foundryup &>/dev/null; then
-  curl -L https://foundry.paradigm.xyz | bash
 fi
