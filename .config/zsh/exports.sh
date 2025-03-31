@@ -1,5 +1,7 @@
 #! /usr/bin/env bash
-
+export EDITOR='nvim'
+export VISUAL='nvim'
+export BROWSER='firefox'
 # Man colorized, no clear screen on quit
 export MANPAGER="less -X -R --use-color -Dd+r -Du+b"
 export LANG='en_US.UTF-8'
@@ -17,6 +19,8 @@ case ":$PATH:" in
 *":$PNPM_HOME:"*) ;;
 *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 
 export LUA_PATH='/Users/diegofigs/.local/share/mise/downloads/lua/5.1/lua-5.1/luarocks-3.11.1/src/?.lua;./?.lua;/usr/local/share/lua/5.1/?.lua;/usr/local/share/lua/5.1/?/init.lua;/usr/local/lib/lua/5.1/?.lua;/usr/local/lib/lua/5.1/?/init.lua;;/Users/diegofigs/.luarocks/share/lua/5.1/?.lua;/Users/diegofigs/.luarocks/share/lua/5.1/?/init.lua;/Users/diegofigs/.local/share/mise/installs/lua/5.1/luarocks/share/lua/5.1/?.lua;/Users/diegofigs/.local/share/mise/installs/lua/5.1/luarocks/share/lua/5.1/?/init.lua'
 export LUA_CPATH='./?.so;/usr/local/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/Users/diegofigs/.luarocks/lib/lua/5.1/?.so;/Users/diegofigs/.local/share/mise/installs/lua/5.1/luarocks/lib/lua/5.1/?.so'
