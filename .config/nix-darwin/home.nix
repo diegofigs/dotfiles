@@ -28,6 +28,9 @@
       save = 10000;
       size = 10000;
     };
+    initExtra = "
+      export EDITOR=nvim
+    ";
     completionInit = "
       # completers
       zstyle ':completion:*' completer _extensions _complete _approximate
