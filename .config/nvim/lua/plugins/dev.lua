@@ -1,14 +1,5 @@
 return {
   {
-    "diegofigs/npackages-node.nvim",
-    enabled = false,
-    dependencies = {
-      "neovim/node-client",
-    },
-    event = "VeryLazy",
-  },
-
-  {
     "folke/lazydev.nvim",
     opts = function(_, opts)
       vim.list_extend(opts.library or {}, {
