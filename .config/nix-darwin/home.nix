@@ -48,6 +48,7 @@
       pn = "pnpm";
       tf = "terraform";
       dot = "yadm";
+      dot-cz = "dot cz --gpg-sign";
       cat = "bat";
       find = "fd";
       ls = "eza";
