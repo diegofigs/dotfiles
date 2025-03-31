@@ -62,12 +62,16 @@
     casks = [
       "balenaetcher"
       "brave-browser"
+      "cloudflare-warp"
       "discord"
       "docker"
-      "cloudflare-warp"
       "expressvpn"
+      "obsidian"
+      "pomatez"
       "retroarch-metal"
+      "spotify"
       "the-unarchiver"
+      "vial"
     ];
     onActivation.cleanup = "zap";
   };

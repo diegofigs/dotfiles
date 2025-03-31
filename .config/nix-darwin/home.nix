@@ -28,11 +28,7 @@
       save = 10000;
       size = 10000;
     };
-    initExtra = "
-      export PATH=/Users/diegofigs/.local/share/solana/install/active_release/bin:$PATH
-      export PATH=/Users/diegofigs/.foundry/bin:$PATH
-    ";
-    initExtraBeforeCompInit = "
+    completionInit = "
       # completers
       zstyle ':completion:*' completer _extensions _complete _approximate
 
@@ -116,6 +112,7 @@
     eza
     fd
     fontconfig
+    foundry
     fzf
     git
     gh
@@ -137,6 +134,7 @@
     ripgrep
     rustup
     signal-desktop
+    solana-cli
     sops
     starship
     telegram-desktop

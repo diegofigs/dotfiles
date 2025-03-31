@@ -13,10 +13,8 @@
   };
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, nix-homebrew }:
-    {
-      # Build darwin flake using:
-      # $ darwin-rebuild build --flake .#Diegos-MacBook-Pro
-      darwinConfigurations."Diegos-MacBook-Pro" = nix-darwin.lib.darwinSystem {
+  let
+    darwin = nix-darwin.lib.darwinSystem {
         modules = [
           ./configuration.nix
           nix-homebrew.darwinModules.nix-homebrew
@@ -40,5 +38,12 @@
         ];
         specialArgs = { inherit inputs; };
       };
+  in
+    {
+      # Build darwin flake using:
+      # $ darwin-rebuild build --flake .#Diegos-MacBook-Pro
+      darwinConfigurations."Diegos-MacBook-Pro" = darwin;
+      # $ darwin-rebuild build --flake .#Diegos-Mac-mini
+      darwinConfigurations."Diegos-Mac-mini" = darwin;
     };
 }
