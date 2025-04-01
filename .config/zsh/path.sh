@@ -11,6 +11,3 @@ export PATH="$PATH:$HOME/.avm/bin"
 export PATH="$PATH:$HOME/.config/.foundry/bin"
 export PATH="$PATH:$HOME/.config/.cyfrin/bin"
 export PATH="$PATH:$HOME/.luarocks/bin"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi

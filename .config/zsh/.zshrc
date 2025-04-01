@@ -16,6 +16,9 @@ for file in "$ZDOTDIR"/{aliases,exports,functions,path}.sh; do
 done;
 unset file;
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
+
 # create a zkbd compatible hash;
 # to add other keys to this hash, see: man 5 terminfo
 typeset -g -A key
