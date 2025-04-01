@@ -56,6 +56,6 @@ if command -v nvim &>/dev/null && ! [ -d ~/.config/nvim ]; then
   rm -rf ~/.config/nvim/.git
 fi
 
-if ! command -v solana &>/dev/null; then
-  sh -c "$(curl -sSfL https://release.anza.xyz/stable/install)"
-fi
+# if ! command -v solana &>/dev/null; then
+#   sh -c "$(curl -sSfL https://release.anza.xyz/stable/install)"
+# fi
