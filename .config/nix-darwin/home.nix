@@ -28,19 +28,19 @@
       save = 10000;
       size = 10000;
     };
-    initExtra = "
-      export EDITOR=nvim
-    ";
-    completionInit = "
-      # completers
-      zstyle ':completion:*' completer _extensions _complete _approximate
+    initExtra = ''
+    export EDITOR=nvim
+    '';
+    completionInit = ''
+    # completers
+    zstyle ':completion:*' completer _extensions _complete _approximate
 
-      # arrow-driven tab menu
-      zstyle ':completion:*' menu select
+    # arrow-driven tab menu
+    zstyle ':completion:*' menu select
 
-      # persistent rehash
-      zstyle ':completion:*' rehash true
-    ";
+    # persistent rehash
+    zstyle ':completion:*' rehash true
+    '';
     shellAliases = {
       sudo = "sudo ";
       nf = "neofetch";

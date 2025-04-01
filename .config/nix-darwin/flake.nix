@@ -40,6 +40,7 @@
       };
   in
     {
+      defaultPackage.aarch64-darwin = darwin.system;
       # Build darwin flake using:
       # $ darwin-rebuild build --flake .#Diegos-MacBook-Pro
       darwinConfigurations."Diegos-MacBook-Pro" = darwin;

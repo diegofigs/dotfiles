@@ -1,6 +1,10 @@
 { pkgs, inputs, ... }:
 {
   nixpkgs.config.allowUnfree = true;
+  nix.channel.enable = false;
+  nix.settings = {
+    trusted-users = ["diegofigs"];
+  };
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages =
