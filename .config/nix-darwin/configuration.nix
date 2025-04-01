@@ -58,7 +58,6 @@
 
   homebrew = {
     enable = true;
-    brews = [ "ykman" ];
     casks = [
       "balenaetcher"
       "brave-browser"

@@ -137,10 +137,12 @@
     openssl
     ripgrep
     rustup
+    shellcheck
     signal-desktop
     solana-cli
     sops
     starship
+    stylua
     telegram-desktop
     time
     tmux
@@ -148,6 +150,7 @@
     watchman
     wget
     yadm
+    yubikey-manager
     zoxide
 
     nodePackages.node2nix
