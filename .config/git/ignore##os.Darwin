@@ -2,6 +2,7 @@
 .local
 .mozilla
 .npm
+.direnv
 projects
 
 .vscode
@@ -40,4 +41,3 @@ Dropbox
 Network Trash Folder
 Temporary Items
 .apdisk
-
