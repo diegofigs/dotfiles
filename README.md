@@ -1,18 +1,18 @@
 # dotfiles
 
 ## How to install
+
+Mac:
+
+```sh
+curl -fLo /usr/local/bin/yadm https://github.com/yadm-dev/yadm/raw/master/yadm && chmod a+x /usr/local/bin/yadm
+yadm clone https://github.com/diegofigs/dotfiles.git
 ```
-Mac: 
- brew install yadm &&
- yadm clone https://github.com/diegofigs/dotfiles.git
 
-Arch (fresh install):
- pacman -Syu sudo git --noconfirm &&
- sudo curl -fLo /bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master/yadm && 
- sudo chmod a+x /bin/yadm &&
- yadm clone https://github.com/diegofigs/dotfiles.git
+Arch:
 
-Arch (AUR with yay): 
- yay -Syu yadm-git &&
- yadm clone https://github.com/diegofigs/dotfiles.git
+```sh
+pacman -Syu sudo git --noconfirm &&
+curl -fLo /bin/yadm https://github.com/yadm-dev/yadm/raw/master/yadm && chmod a+x /bin/yadm
+yadm clone https://github.com/diegofigs/dotfiles.git
 ```
