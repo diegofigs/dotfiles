@@ -38,3 +38,22 @@ jobs:
         with:
           yamllint_file_or_dir: ".config/alacritty"
           yamllint_config_filepath: ".config/alacritty/.yamllint.yml"
+
+  nix-build:
+    name: Nix build
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and test nix-darwin configuration
+        working-directory: .config/nix-darwin
+        run: |
+          nix build \#darwinConfigurations.default.system
+          # mv /etc/nix/nix.conf /etc/nix/nix.conf.before-nix-darwin
+          # ./result/sw/bin/darwin-rebuild switch --flake .#default
