@@ -54,5 +54,5 @@ jobs:
       - name: Build and test nix-darwin configuration
         working-directory: .config/nix-darwin
         run: |
-          nix build
-          ./result/sw/bin/darwin-rebuild switch --flake .
+          nix build \#darwinConfigurations.default.system
+          ./result/sw/bin/darwin-rebuild switch --flake .#default
