@@ -52,6 +52,7 @@ jobs:
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and test nix-darwin configuration
+        working-directory: .config/nix-darwin
         run: |
           nix build
           ./result/sw/bin/darwin-rebuild switch --flake .
