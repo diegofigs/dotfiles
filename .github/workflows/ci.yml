@@ -55,5 +55,5 @@ jobs:
         working-directory: .config/nix-darwin
         run: |
           nix build \#darwinConfigurations.default.system
-          mv /etc/nix/nix.conf /etc/nix/nix.conf.before-nix-darwin
-          ./result/sw/bin/darwin-rebuild switch --flake .#default
+          # mv /etc/nix/nix.conf /etc/nix/nix.conf.before-nix-darwin
+          # ./result/sw/bin/darwin-rebuild switch --flake .#default
